@@ -1,66 +1,286 @@
-# Python & Data Science
+<!-- ========================================================= -->
+<!--                  PYTHON & DATA SCIENCE                    -->
+<!-- ========================================================= -->
 
-Cours de Python et Data Science pour les étudiants de L3 et M1 Économie.
+<p align="center">
 
-## Accès rapide
+<img src="assets/banner.png" width="100%">
 
-- Planning des TD
-- Notebooks Colab
-- Tests de présence
-- Quiz
-- Projets
-- Ressources
-- FAQ
+</p>
 
-## Organisation du semestre
+# 🐍 Python & Data Science
 
-- 9 TD de 2 heures
-- 1 test de présence au début de chaque TD
-- 1 notebook Colab
-- 1 quiz en fin de séance
-- 1 projet en binôme ou trinôme
+<p align="center">
 
-## Programme
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![Google Colab](https://img.shields.io/badge/Google-Colab-F9AB00?logo=googlecolab)
+![GitHub](https://img.shields.io/badge/GitHub-Version_Control-black?logo=github)
+![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-blue?logo=githubactions)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)
 
-| TD | Sujet |
-|---|---|
+</p>
+
+---
+
+> [!NOTE]
+>
+> **Dernière mise à jour :** Juillet 2026
+>
+> 🚧 Cette plateforme est actuellement en cours de construction.
+> Les ressources pédagogiques seront publiées progressivement tout au long du semestre.
+
+---
+
+# 📖 Présentation
+
+Bienvenue sur le dépôt officiel du cours **Python & Data Science**.
+
+Ce dépôt accompagne les travaux dirigés de **Licence 3** et **Master 1 Économie**.
+
+L'objectif est de proposer un environnement d'apprentissage moderne, reproductible et entièrement basé sur le Web.
+
+Aucune installation locale de Python n'est nécessaire.
+
+Les travaux pratiques sont réalisés avec **Google Colab**, les projets sont versionnés avec **GitHub** et certains exercices sont progressivement vérifiés automatiquement grâce à **GitHub Actions**.
+
+---
+
+<p align="center">
+
+<img src="assets/images/colab-demo.png" width="900">
+
+</p>
+
+---
+
+# 🚀 Accès rapide
+
+| Ressource | Description |
+|-----------|-------------|
+| 📚 [Travaux dirigés](assignments/) | Supports de TD, notebooks et exercices |
+| 📊 [Mini-projets](projects/) | Mini-projets et consignes |
+| 📂 [Jeux de données](datasets/) | Jeux de données utilisés pendant les TD |
+| 📖 [Documentation](docs/) | Documentation de la plateforme |
+| 📁 [Ressources](resources/) | Fiches mémo et ressources complémentaires |
+| ❓ [FAQ](faq/) | Questions fréquentes |
+
+---
+
+# 📈 Progression du dépôt
+
+| Ressource | Statut |
+|-----------|:------:|
+| README | ✅ |
+| TD1 | ⏳ |
+| TD2 | ⏳ |
+| TD3 | ⏳ |
+| TD4 | ⏳ |
+| TD5 | ⏳ |
+| Mini-projet 1 | ⏳ |
+| TD6 | ⏳ |
+| TD7 | ⏳ |
+| Mini-projet 2 | ⏳ |
+| TD8 | ⏳ |
+| TD9 | ⏳ |
+| Documentation | ⏳ |
+| Jeux de données | ⏳ |
+| FAQ | ⏳ |
+
+**Légende**
+
+- ✅ Disponible
+- 🚧 En cours
+- ⏳ À venir
+
+---
+
+# 📑 Sommaire
+
+- [📖 Présentation](#-présentation)
+- [🎯 Objectifs pédagogiques](#-objectifs-pédagogiques)
+- [🌍 Pourquoi ce cours ?](#-pourquoi-ce-cours)
+- [📋 Prérequis](#-prérequis)
+- [📚 Organisation du cours](#-organisation-du-cours)
+- [📅 Programme](#-programme)
+- [🔄 Déroulement d'une séance](#-déroulement-dune-séance)
+- [🛠️ Environnement de travail](#️-environnement-de-travail)
+- [🤝 Contribution](#-contribution)
+- [📜 Licence](#-licence)
+
+---
+
+# 🎯 Objectifs pédagogiques
+
+À l'issue du cours, vous serez capable de :
+
+- développer des programmes en Python ;
+- écrire des fonctions réutilisables ;
+- utiliser NumPy pour le calcul scientifique ;
+- manipuler des données avec Pandas ;
+- produire des graphiques avec Matplotlib ;
+- utiliser Google Colab pour développer des notebooks interactifs ;
+- utiliser Git et GitHub pour gérer vos projets ;
+- réaliser une analyse complète d'un jeu de données.
+
+---
+
+# 🌍 Pourquoi ce cours ?
+
+Python est aujourd'hui l'un des langages les plus utilisés dans les domaines de :
+
+- l'économie ;
+- la finance ;
+- l'assurance ;
+- la data science ;
+- l'intelligence artificielle ;
+- la recherche.
+
+Le cours privilégie une approche pratique basée sur des notebooks interactifs, des études de cas et des mini-projets afin de développer des compétences directement mobilisables dans un contexte professionnel.
+
+---
+
+# 📋 Prérequis
+
+Pour suivre le cours, vous aurez uniquement besoin de :
+
+- un compte GitHub ;
+- un compte Google ;
+- un navigateur Web récent (Chrome, Edge ou Firefox).
+
+Aucune installation de Python n'est nécessaire.
+
+---
+
+# 📚 Organisation du cours
+
+Le cours est composé de :
+
+- **9 Travaux Dirigés**
+- **2 Mini-projets**
+- **1 Test de présence au début de chaque séance**
+- **1 Quiz à la fin de chaque séance**
+- **Travail personnel en autonomie**
+- **Projets réalisés en binôme ou trinôme**
+
+Chaque séance dure **2 heures**.
+
+---
+
+# 📅 Programme
+
+| Séance | Sujet |
+|--------|------|
 | TD1 | Git, GitHub et Google Colab |
 | TD2 | Les bases de Python et les listes |
-| TD3 | Les fonctions, paquets et Numpy |
-| TD4 | Matplotlib, les dictionnaires et Pandas |
-| TD5 | Logique, flux de contrôlesn filtrage et les boucles + étude de cas |
-| Projet 1 | xxxxx |
-| TD6 | Pandas : Agrégation et transformation des données |
-| TD7 | Pandas : Filtrage des données et Opérations conditionnelles  |
-| Projet 2 | xxxxx |
-| TD8 | Pandas : fusion de données et jointure |
-| TD9 | Pandas : fusion avancées et séries temporelles |
+| TD3 | Les fonctions, modules et NumPy |
+| TD4 | Matplotlib, dictionnaires et Pandas |
+| TD5 | Logique, flux de contrôle, filtrage et boucles + étude de cas |
+| MP1 | **Mini-projet 1 – Analyse exploratoire** |
+| TD6 | Pandas : agrégation et transformation des données |
+| TD7 | Pandas : filtrage des données et opérations conditionnelles |
+| MP2 | **Mini-projet 2 – Nettoyage et transformation des données** |
+| TD8 | Pandas : fusion de données et jointures |
+| TD9 | Pandas : fusions avancées et séries temporelles |
 
-## Fonctionnement d’un TD
+---
 
-1. Remplir le formulaire de présence.
-2. Ouvrir le notebook dans Google Colab.
-3. Réaliser les exercices.
-4. Enregistrer le travail dans GitHub.
-5. Vérifier GitHub Actions.
-6. Répondre au quiz final.
+# 🔄 Déroulement d'une séance
 
-## Structure du dépôt
+Chaque séance suit le même workflow.
 
-- `assignments/` : TD et exercices
-- `datasets/` : jeux de données
-- `resources/` : guides et fiches pratiques
-- `projects/` : consignes des projets
-- `faq/` : dépannage et questions fréquentes
+```text
+               Début du TD
+                    │
+                    ▼
+      Google Forms (présence)
+                    │
+                    ▼
+                GitHub
+                    │
+                    ▼
+          Open in Google Colab
+                    │
+                    ▼
+      Réalisation des exercices
+                    │
+                    ▼
+      Sauvegarde sur GitHub
+                    │
+                    ▼
+            GitHub Actions
+      (vérification automatique)
+                    │
+                    ▼
+        Google Forms (quiz)
+                    │
+                    ▼
+               Fin du TD
+```
 
-## Prérequis
+---
 
-- un compte Google ;
-- un compte GitHub ;
-- un navigateur récent ;
-- aucune installation Python obligatoire.
+# 🛠️ Environnement de travail
 
-## Contact
+| Outil | Utilisation |
+|--------|-------------|
+| Python | Programmation |
+| Google Colab | Développement des notebooks |
+| Git | Gestion de versions |
+| GitHub | Hébergement des projets |
+| GitHub Actions | Vérification automatique |
+| NumPy | Calcul scientifique |
+| Pandas | Manipulation des données |
+| Matplotlib | Visualisation |
+| Google Forms | Présence et quiz |
 
-Maxence Guery  
-PAST – UPJV Économie
+## Compatibilité
+
+| Plateforme | Support |
+|------------|:-------:|
+| Windows 11 | ✅ |
+| macOS | ✅ |
+| Linux | ✅ |
+| Google Chrome | ✅ |
+| Microsoft Edge | ✅ |
+| Mozilla Firefox | ✅ |
+
+---
+
+# 📂 Structure du dépôt
+
+```text
+python-datascience
+│
+├── assignments/
+├── datasets/
+├── docs/
+├── faq/
+├── projects/
+├── resources/
+└── assets/
+```
+
+---
+
+# 🤝 Contribution
+
+Les étudiants sont encouragés à :
+
+- signaler une erreur ;
+- proposer une amélioration ;
+- poser leurs questions pendant les séances.
+
+---
+
+# 📜 Licence
+
+Ce projet est distribué sous licence **MIT**.
+
+---
+
+<p align="center">
+
+⭐ Si ce dépôt vous est utile, n'hésitez pas à lui attribuer une étoile.
+
+</p>
