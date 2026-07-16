@@ -48,7 +48,7 @@ Les travaux pratiques sont réalisés avec **Google Colab**, les projets sont ve
 
 <p align="center">
 
-<img src="assets/images/colab-demo.png" width="300">
+<img src="assets/images/colab-demo.png" width="600">
 
 </p>
 
