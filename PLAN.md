@@ -33,6 +33,42 @@ Option B (avancés, TD3+) : token GitHub stocké dans les Secrets Colab (panneau
 
 La seule chose que Colab ne remplace pas : l'interface GitHub.com pour créer le dépôt depuis le modèle, consulter l'onglet Actions et lire les résultats des tests.
 
+Persistance des données dans Colab
+
+Colab est un environnement éphémère. Tout le contenu de /content est supprimé dans les cas suivants :
+
+inactivité de 90 minutes ;
+session dépassant 12 heures (compte gratuit) ;
+fermeture du navigateur.
+
+Ce qui disparaît : fichiers créés, dépôts clonés, packages installés.
+Ce qui persiste : le notebook s'il est enregistré sur Drive ou GitHub, et les fichiers sauvegardés dans Google Drive (/content/drive/MyDrive/).
+
+Conséquence directe : le push GitHub en fin de séance n'est pas optionnel.
+C'est la seule sauvegarde réelle du travail de l'étudiant.
+
+Workflow à enseigner dès TD1 :
+
+Début de session    → ouvrir le notebook depuis GitHub (badge Open in Colab)
+Pendant la séance   → travailler dans Colab
+Fin de séance       → commit + push vers GitHub AVANT la déconnexion
+
+La cellule setup en début de notebook (qui recrée l'environnement) est indispensable précisément parce que Colab repart de zéro à chaque session.
+
+Options de push selon le niveau des étudiants :
+
+Débutants (TD1-TD2) : Fichier → Enregistrer une copie dans GitHub (OAuth automatique, sans commande)
+
+Intermédiaires (TD3+) : cellule de remise en bas du notebook :
+
+# @title 📤 Remettre le TD sur GitHub (exécuter en fin de séance)
+import subprocess
+subprocess.run(["git", "add", "."])
+subprocess.run(["git", "commit", "-m", "td03: completer les exercices"])
+subprocess.run(["git", "push"])
+
+Avancés (fin de semestre) : commandes git directes dans une cellule shell.
+
 1.2 Les dépôts GitHub
 
 Année 1 (2026-2027) — dépôt unique sous compte personnel
@@ -431,6 +467,27 @@ try:
     print(f"  ✅ {version_git[0]}" if ok else "  ❌ Commande incorrecte")
 except NameError:
     print("  ❌ version_git n'est pas défini")
+
+Pour git init (conversion d'un répertoire existant), la validation repose sur os.path.isdir(".git") :
+
+# Setup : crée un projet existant et positionne l'étudiant dedans
+import os
+os.chdir("/content")
+os.makedirs("mh_survey/data", exist_ok=True)
+open("mh_survey/report.md", "w").write("# Rapport santé mentale")
+open("mh_survey/funding.doc", "w").write("Budget")
+open("mh_survey/data/survey_results.csv", "w").write("id,score\n1,7\n2,4\n")
+%cd /content/mh_survey
+
+# Exercice : l'étudiant complète ___
+!___
+
+# Validation
+import os
+git_existe = os.path.isdir(".git")
+bon_repertoire = os.getcwd().endswith("mh_survey")
+print(f"  {'✅' if bon_repertoire else '❌'} Répertoire : {os.getcwd()}")
+print(f"  {'✅' if git_existe else '❌'} Dépôt Git initialisé (.git présent)")
 
 6. Mettre en place GitHub Actions
 
