@@ -2,13 +2,36 @@
 1.1 Les quatre outils
 Outil	Fonction
 GitHub	Supports, dépôts étudiants, historique, projets
-Google Colab	Exécution des notebooks
+Google Colab	Exécution des notebooks, commandes shell, commandes Git (git pré-installé)
 Google Forms	Présence, quiz, recueil des identités et liens GitHub
 GitHub Actions	Exécution automatique des tests
 Google Sheets	Tableau de suivi centralisé des réponses Forms
 Google Drive	Données volumineuses et corrigés non encore publiés
 
 Google Forms peut être configuré comme quiz, attribuer des points, enregistrer les réponses et fournir un retour automatique.
+
+Google Colab et Git
+
+Git est pré-installé dans l'environnement Colab. Les étudiants n'ont besoin d'aucune installation locale.
+
+Ce qui fonctionne entièrement dans Colab :
+
+!git --version         → vérifier la version de Git
+!git clone <url>       → cloner un dépôt public
+!git status            → voir l'état du dépôt
+!git add .             → préparer les fichiers
+!git commit -m "..."   → commiter
+!git log               → consulter l'historique
+!git diff              → voir les différences
+%cd dossier            → naviguer dans les répertoires (persistant)
+!ls / !pwd             → commandes shell courantes
+
+Pour pousser vers GitHub depuis Colab, deux options :
+
+Option A (débutants) : Fichier → Enregistrer une copie dans GitHub (OAuth automatique, sans token).
+Option B (avancés, TD3+) : token GitHub stocké dans les Secrets Colab (panneau 🔑), puis git remote set-url avec le token.
+
+La seule chose que Colab ne remplace pas : l'interface GitHub.com pour créer le dépôt depuis le modèle, consulter l'onglet Actions et lire les résultats des tests.
 
 1.2 Les dépôts GitHub
 
@@ -304,6 +327,111 @@ Originalité du projet	Non
 La note finale doit donc combiner :
 
 note automatique + correction humaine
+
+5.4 Intégrer des infographies dans les notebooks
+
+Chaque TD peut inclure des infographies pédagogiques affichées directement dans Colab. Les fichiers sont versionnés dans le dépôt enseignant, co-localisés avec le notebook.
+
+Structure des fichiers :
+
+assignments/td01/
+├── td01_enonce.ipynb
+└── images/
+    ├── 01_nom_de_linfographie.png
+    ├── 02_nom_de_linfographie.png
+    └── ...
+
+Convention de nommage : numéro d'ordre + nom descriptif en minuscules avec underscores.
+
+Affichage dans le notebook :
+
+Définissez une fonction helper dans une cellule de configuration en haut du notebook :
+
+# @title ⚙️ Configuration des ressources (ne pas modifier)
+from IPython.display import Image, display
+
+BASE_URL = "https://raw.githubusercontent.com/Maxencegu/python-datascience/main/assignments/td01/images/"
+
+def afficher_infographie(nom_fichier, largeur=950):
+    display(Image(url=BASE_URL + nom_fichier, width=largeur))
+
+Puis dans chaque cellule de cours :
+
+# @title Infographie — Titre de la notion
+afficher_infographie("01_nom_de_linfographie.png")
+
+Règles importantes :
+
+Pour les images (PNG) : utilisez raw.githubusercontent.com — le MIME type est correct.
+Pour les PDFs : utilisez l'URL blob de GitHub (github.com/.../blob/...) et non raw, pour que le navigateur ouvre le viewer PDF plutôt que de déclencher un téléchargement.
+Un PDF séparé est rarement nécessaire si l'infographie est complète : évitez la redondance.
+
+5.5 Concevoir des exercices interactifs dans Colab
+
+Pattern standard en trois cellules
+
+Toute séquence d'exercice suit la même structure :
+
+Cellule 1 — Setup (cachée, @title)
+Crée l'environnement nécessaire à l'exercice (dossiers, fichiers, état initial).
+L'étudiant doit l'exécuter en premier.
+
+Cellule 2 — Exercice
+Contient les instructions en commentaires et des placeholders ___ à remplacer.
+___ est le marqueur standard : l'étudiant remplace chaque ___ par son code.
+
+Cellule 3 — Validation (@title ✅)
+Vérifie automatiquement les résultats et affiche un retour par étape.
+
+Placeholder ___
+
+___ est utilisé pour tout type d'exercice (shell, Git, Python).
+En Python, ___ lève un NameError si l'étudiant oublie de le remplacer.
+Évitez les placeholders sur les lignes de commandes magiques IPython (voir ci-dessous).
+
+Exercices shell — règles spécifiques
+
+Commande	Comportement dans Colab
+!cd dossier	Ne fonctionne pas : chaque ! s'exécute dans un sous-shell isolé
+%cd dossier	Fonctionne : changement permanent dans la session Colab
+!ls	Retourne les fichiers sur une seule ligne (difficile à parser)
+!ls -1	Retourne un fichier par ligne (recommandé pour la validation)
+result = !cmd	Capture la sortie dans une liste Python (nécessaire pour valider)
+
+Règle critique : ne jamais mettre de commentaire inline après une commande magique %.
+Le commentaire est interprété comme argument de la commande.
+
+# FAUX — essaie de naviguer dans un dossier nommé "# le bon dossier"
+%cd     # le bon dossier
+
+# CORRECT — commentaire au-dessus
+# Allez dans le dossier data
+%cd data
+
+Validation des exercices shell
+
+Seules les étapes qui modifient l'état du système sont fiables à tester automatiquement :
+
+Étape testable automatiquement	os.getcwd() pour vérifier le répertoire courant
+Étape testable automatiquement	os.listdir() pour vérifier les fichiers présents (indépendant du format de ls)
+Étape auto-validée visuellement	!pwd et !ls : l'étudiant voit l'output et peut se corriger lui-même
+
+Exercices Git — règles spécifiques
+
+Git est pré-installé dans Colab. Aucune cellule de setup n'est nécessaire pour les commandes de lecture.
+Capturez toujours la sortie dans une variable pour pouvoir la valider :
+
+version_git = !git --version
+print(version_git[0])
+
+La validation vérifie que la variable existe et contient la sortie attendue :
+
+try:
+    ok = isinstance(version_git, list) and version_git[0].startswith("git version")
+    print(f"  ✅ {version_git[0]}" if ok else "  ❌ Commande incorrecte")
+except NameError:
+    print("  ❌ version_git n'est pas défini")
+
 6. Mettre en place GitHub Actions
 
 Dans le dépôt modèle :
