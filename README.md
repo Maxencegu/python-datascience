@@ -209,10 +209,11 @@ Chaque séance suit le même workflow.
                Début du TD
                     │
                     ▼
-      Google Forms (présence)
+                GitHub
+          (accès au dépôt du cours)
                     │
                     ▼
-                GitHub
+      Google Forms (présence)
                     │
                     ▼
           Open in Google Colab
