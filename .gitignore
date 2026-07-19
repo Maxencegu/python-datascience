@@ -78,8 +78,16 @@ target/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# Corrigés (à publier manuellement après l'échéance)
-*_correction.ipynb
+# Corrigés (retirer la ligne correspondante le jour de la publication)
+assignments/td01_fondements_de_github/td01_correction.ipynb
+assignments/td02_bases_de_python/td02_correction.ipynb
+assignments/td03_fonctions_modules_numpy/td03_correction.ipynb
+assignments/td04_matplotlib_pandas/td04_correction.ipynb
+assignments/td05_logique_et_boucles/td05_correction.ipynb
+assignments/td06_agregation/td06_correction.ipynb
+assignments/td07_filtrage/td07_correction.ipynb
+assignments/td08_fusion/td08_correction.ipynb
+assignments/td09_series_temporelles/td09_correction.ipynb
 
 # IPython
 profile_default/
