@@ -216,6 +216,9 @@ Chaque séance suit le même workflow.
           (accès au dépôt du cours)
                     │
                     ▼
+     Correction du TD précédent      ← à partir du TD2
+                    │
+                    ▼
       Google Forms (présence)        ← tous les TD (10 pts)
                     │
                     ▼
