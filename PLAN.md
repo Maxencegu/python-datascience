@@ -724,17 +724,18 @@ point sur le TD suivant.
 10. Contenu des TD et mini-projets
 Année 1 : programme commun L3/M1
 Séance	Contenu principal	Production GitHub
-TD1	Git, GitHub et Google Colab	Création du dépôt et premier commit
-TD2	Les bases de Python et les listes	Fonctions simples
-TD3	Les fonctions, modules et NumPy	solutions.py avec fonctions NumPy
-TD4	Matplotlib, dictionnaires et Pandas	Premiers graphiques et DataFrames
-TD5	Logique, flux de contrôle, filtrage et boucles + étude de cas	Analyse guidée complète
+TD1	Introduction à Git	—
+TD2	Introduction à GitHub	Création du dépôt et premier commit
+TD3	Les bases de Python	Fonctions simples
+TD4	Les fonctions, modules et NumPy	solutions.py avec fonctions NumPy
+TD5	Matplotlib, dictionnaires et Pandas	Premiers graphiques et DataFrames
+TD6	Logique, flux de contrôle, filtrage et boucles	Analyse guidée complète
 MP1	Mini-projet 1 – Analyse exploratoire	Notebook d'analyse autonome
-TD6	Pandas : agrégation et transformation des données	Analyse tabulaire avancée
-TD7	Pandas : filtrage des données et opérations conditionnelles	Nettoyage et filtrage
+TD7	Pandas : agrégation et transformation des données	Analyse tabulaire avancée
+TD8	Pandas : filtrage des données et opérations conditionnelles	Nettoyage et filtrage
 MP2	Mini-projet 2 – Nettoyage et transformation des données	Pipeline de traitement
-TD8	Pandas : fusion de données et jointures	Jointures entre DataFrames
-TD9	Pandas : fusions avancées et séries temporelles	Analyse temporelle
+TD9	Pandas : fusion de données et jointures	Jointures entre DataFrames
+TD10	Séries temporelles	Analyse temporelle
 
 Remarque : les deux mini-projets sont des jalons intermédiaires évalués, intercalés entre les TD. Ils permettent de vérifier l'acquisition des compétences avant de passer à la suite.
 À partir de l’année suivante

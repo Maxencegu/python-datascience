@@ -77,12 +77,13 @@ Les travaux pratiques sont réalisés avec **Google Colab**, les projets sont ve
 | TD3 | ⏳ |
 | TD4 | ⏳ |
 | TD5 | ⏳ |
-| Mini-projet 1 | ⏳ |
 | TD6 | ⏳ |
+| Mini-projet 1 | ⏳ |
 | TD7 | ⏳ |
-| Mini-projet 2 | ⏳ |
 | TD8 | ⏳ |
+| Mini-projet 2 | ⏳ |
 | TD9 | ⏳ |
+| TD10 | ⏳ |
 | Documentation | ⏳ |
 | Jeux de données | ⏳ |
 | FAQ | ⏳ |
@@ -97,8 +98,8 @@ Les travaux pratiques sont réalisés avec **Google Colab**, les projets sont ve
 
 # 📋 Feuilles de présence
 
-| Séance | QR Code | Lien direct |
-|--------|:-------:|-------------|
+| TD | QR Code | Lien direct |
+|-----|:-------:|-------------|
 | TD1 | ![QR TD1](assignments/td01_fondements_de_github/assets/qr_td01_presence.png) | [Feuille de présence TD1](https://forms.gle/QY9o9Pjzp7vwyqex6) |
 | TD2 | ⏳ | — |
 | TD3 | ⏳ | — |
@@ -108,6 +109,7 @@ Les travaux pratiques sont réalisés avec **Google Colab**, les projets sont ve
 | TD7 | ⏳ | — |
 | TD8 | ⏳ | — |
 | TD9 | ⏳ | — |
+| TD10 | ⏳ | — |
 
 ---
 
@@ -187,17 +189,18 @@ Chaque séance dure **2 heures**.
 
 | Séance | Sujet |
 |--------|------|
-| TD1 | Git, GitHub et Google Colab |
-| TD2 | Les bases de Python et les listes |
-| TD3 | Les fonctions, modules et NumPy |
-| TD4 | Matplotlib, dictionnaires et Pandas |
-| TD5 | Logique, flux de contrôle, filtrage et boucles + étude de cas |
+| TD1 | Introduction à Git |
+| TD2 | Introduction à GitHub |
+| TD3 | Les bases de Python |
+| TD4 | Les fonctions, modules et NumPy |
+| TD5 | Matplotlib, dictionnaires et Pandas |
+| TD6 | Logique, flux de contrôle, filtrage et boucles |
 | MP1 | **Mini-projet 1 – Analyse exploratoire** |
-| TD6 | Pandas : agrégation et transformation des données |
-| TD7 | Pandas : filtrage des données et opérations conditionnelles |
+| TD7 | Pandas : agrégation et transformation des données |
+| TD8 | Pandas : filtrage des données et opérations conditionnelles |
 | MP2 | **Mini-projet 2 – Nettoyage et transformation des données** |
-| TD8 | Pandas : fusion de données et jointures |
-| TD9 | Pandas : fusions avancées et séries temporelles |
+| TD9 | Pandas : fusion de données et jointures |
+| TD10 | Séries temporelles |
 
 ---
 
