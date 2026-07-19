@@ -213,27 +213,37 @@ Chaque séance suit le même workflow.
           (accès au dépôt du cours)
                     │
                     ▼
-      Google Forms (présence)
+      Google Forms (présence)        ← tous les TD (10 pts)
                     │
                     ▼
           Open in Google Colab
                     │
                     ▼
-      Réalisation des exercices
+      Réalisation des exercices      ← tous les TD (20 pts)
                     │
                     ▼
-      Sauvegarde sur GitHub
+      Sauvegarde sur GitHub          ← à partir du TD2
                     │
                     ▼
-            GitHub Actions
+            GitHub Actions           ← à partir du TD3
       (vérification automatique)
                     │
                     ▼
-        Google Forms (quiz)
+        Google Forms (quiz)          ← à partir du TD3 (10 pts)
                     │
                     ▼
                Fin du TD
 ```
+
+---
+
+# 🎓 Évaluation
+
+| Élément | Points | À partir de |
+|---------|:------:|:-----------:|
+| Feuille de présence | 10 pts | TD1 |
+| Notebook (exercices Colab) | 20 pts | TD1 |
+| Quiz de fin de séance | 10 pts | TD3 |
 
 ---
 
