@@ -452,6 +452,10 @@ Seules les étapes qui modifient l'état du système sont fiables à tester auto
 Étape testable automatiquement	os.listdir() pour vérifier les fichiers présents (indépendant du format de ls)
 Étape auto-validée visuellement	!pwd et !ls : l'étudiant voit l'output et peut se corriger lui-même
 
+Principe de non-redondance des exercices
+
+Deux exercices qui utilisent la même commande et produisent le même type de sortie n'apportent pas de valeur supplémentaire. Exemple : un exercice "afficher l'historique" (git log) et un exercice "trouver le message d'un commit" (git log) sont redondants — le second est absorbé par le premier. Avant d'ajouter un exercice, vérifier qu'il introduit une commande ou un concept nouveau.
+
 Exercices Git — règles spécifiques
 
 Git est pré-installé dans Colab. Aucune cellule de setup n'est nécessaire pour les commandes de lecture.
