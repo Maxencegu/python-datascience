@@ -386,9 +386,9 @@ Définissez une fonction helper dans une cellule de configuration en haut du not
 # @title ⚙️ Configuration des ressources (ne pas modifier)
 from IPython.display import Image, display
 
-BASE_URL = "https://raw.githubusercontent.com/Maxencegu/python-datascience/main/assignments/td01/images/"
+BASE_URL = "https://raw.githubusercontent.com/Maxencegu/python-datascience/main/assignments/td01_fondements_de_github/images/"
 
-def afficher_infographie(nom_fichier, largeur=950):
+def afficher_infographie(nom_fichier, largeur=1300):
     display(Image(url=BASE_URL + nom_fichier, width=largeur))
 
 Puis dans chaque cellule de cours :
@@ -1068,7 +1068,20 @@ Votre lot initial comprend :
 1 procédure de secours
 1 grille de projet
 1 grille de soutenance
-18. Ordre de travail recommandé
+18. État d'avancement (mis à jour 2026-07-19)
+
+Séance	Statut	Notes
+TD1	✅ Terminé	8 infographies PNG dark (01-08), notebook complet avec badge Open in Colab, poussé sur GitHub
+TD2	⏳ À faire	Python bases + listes (contenu GitHub cours à adapter)
+TD3–TD9	🔲 Non commencé	—
+MP1, MP2	🔲 Non commencé	—
+
+Détails TD1 :
+- Infographies : 8 fichiers *_pro.png, 1200×2px (2x DPI), thème sombre, viewport 1200px
+- Exercices : shell (pwd/cd/ls), git init, staging, commit, log (limité, par fichier, par date), diff (staged, entre commits), QCM diff, unstage (git restore --staged), revert (git revert HEAD --no-edit)
+- Notebook : 72 cellules, badge Open in Colab en cellule 0
+
+19. Ordre de travail recommandé
 
 Ne cherchez pas à tout produire dans le désordre. Suivez cet ordre :
 
@@ -1084,7 +1097,7 @@ autres TD ;
 tests pilotes ;
 publication.
 
-Le premier objectif opérationnel n’est donc pas de préparer neuf notebooks. C’est de réussir intégralement ce scénario :
+Le premier objectif opérationnel n’est pas de préparer neuf notebooks. C’est de réussir intégralement ce scénario :
 
 Un faux étudiant s’inscrit
 → crée son dépôt

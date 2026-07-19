@@ -72,7 +72,7 @@ Les travaux pratiques sont réalisés avec **Google Colab**, les projets sont ve
 | Ressource | Statut |
 |-----------|:------:|
 | README | ✅ |
-| TD1 | ⏳ |
+| TD1 | ✅ |
 | TD2 | ⏳ |
 | TD3 | ⏳ |
 | TD4 | ⏳ |
@@ -92,6 +92,22 @@ Les travaux pratiques sont réalisés avec **Google Colab**, les projets sont ve
 - ✅ Disponible
 - 🚧 En cours
 - ⏳ À venir
+
+---
+
+# 📋 Feuilles de présence
+
+| Séance | QR Code | Lien direct |
+|--------|:-------:|-------------|
+| TD1 | ![QR TD1](assignments/td01_fondements_de_github/assets/qr_td01_presence.png) | [Feuille de présence TD1](https://forms.gle/QY9o9Pjzp7vwyqex6) |
+| TD2 | ⏳ | — |
+| TD3 | ⏳ | — |
+| TD4 | ⏳ | — |
+| TD5 | ⏳ | — |
+| TD6 | ⏳ | — |
+| TD7 | ⏳ | — |
+| TD8 | ⏳ | — |
+| TD9 | ⏳ | — |
 
 ---
 
