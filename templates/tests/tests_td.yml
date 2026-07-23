@@ -1,0 +1,37 @@
+name: Tests TD
+
+on:
+  push:
+    branches: ['dev_td*']
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Configurer Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Installer les dépendances
+        run: pip install nbformat nbconvert ipykernel numpy pandas matplotlib seaborn
+
+      - name: Détecter le TD depuis le nom de la branche
+        run: |
+          BRANCH=${GITHUB_REF#refs/heads/}
+          echo "TD=${BRANCH#dev_}" >> $GITHUB_ENV
+
+      - name: Télécharger les fichiers de test
+        run: |
+          BASE="https://raw.githubusercontent.com/Maxencegu/python-datascience/main/templates/tests"
+          curl -f -o run_tests.py "$BASE/run_tests.py"
+          curl -f -o expected.json "$BASE/${TD}_expected.json"
+
+      - name: Lancer les tests
+        run: python run_tests.py "${TD}_enonce.ipynb" expected.json

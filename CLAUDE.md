@@ -218,8 +218,76 @@ Ne jamais ajouter dans ce dépôt :
 | TD10 | Séries temporelles | `td10_series_temporelles` |
 
 **Workflow d'une séance (à ne pas modifier sans accord) :**
-GitHub → Correction TD précédent (à partir TD2) → Google Forms présence (10 pts) → Colab → Exercices (20 pts) → Sauvegarde GitHub (à partir TD2) → GitHub Actions (à partir TD3) → Quiz fin de séance (10 pts, à partir TD3)
+GitHub → Correction TD précédent (à partir TD2) → Google Forms présence (10 pts) → Colab → Exercices (20 pts) → Sauvegarde GitHub sur branche `dev_tdXX` (à partir TD2) → GitHub Actions sur branche (à partir TD3) → Pull Request + review collègue → Merge main (à partir TD3) → Quiz fin de séance (10 pts, à partir TD3)
 
 **Remarques importantes :**
 - Les notebooks TD sont modifiés progressivement : ne jamais remplacer un notebook TD existant intégralement sans confirmation explicite
 - Le notebook de correction (`tdXX_correction.ipynb`) est dans `.gitignore` — à stocker sur Google Drive jusqu'à la date de publication
+
+## Workflow étudiant (à partir du TD03)
+
+Les étudiants disposent d'un dépôt personnel `upjv-python-datascience` créé pendant le TD02.
+
+**Convention de branche :** `dev_tdXX` (ex. : `dev_td03`, `dev_td04`)
+
+**Cycle par TD :**
+1. Créer la branche `dev_tdXX` depuis `main`
+2. Travailler sur le notebook dans Colab
+3. Uploader le notebook sur la branche `dev_tdXX`
+4. GitHub Actions (écrits par l'enseignant) vérifient automatiquement le notebook sur la branche
+5. Quand les tests passent → ouvrir une Pull Request vers `main`
+6. Un collègue valide la PR (reviewer obligatoire — règle de protection configurée en TD02)
+7. Merge sur `main`
+
+**Configuration mise en place en TD02 :**
+- Protection de la branche `main` : 1 reviewer obligatoire avant merge
+
+**`requirements.txt` inutile** : les étudiants travaillent sur Colab, qui dispose de numpy, pandas, matplotlib et seaborn préinstallés. Ne pas inclure dans les exercices.
+
+## GitHub Actions — tests automatiques (à partir du TD03)
+
+### Architecture
+
+```
+templates/tests/
+  tests_td.yml          ← workflow générique copié UNE FOIS par l'étudiant dans son repo
+  run_tests.py          ← runner universel téléchargé par Actions au moment de l'exécution
+  generate_expected.py  ← script ENSEIGNANT pour générer le JSON depuis la correction
+  td03_expected.json    ← outputs attendus pour TD03 (à créer par TD)
+  td04_expected.json
+  ...
+```
+
+### Principe de test
+
+- Les tests vérifient les **outputs des cellules** (pas les variables) → pas de collision entre cellules
+- Le fichier `tdXX_expected.json` mappe `"index_cellule" → "output_attendu"` (string stripé)
+- Le runner est téléchargé depuis le dépôt du cours au runtime → valeurs cachées des étudiants
+- Le workflow se déclenche sur tout push vers une branche `dev_td*` et sur toute PR vers `main`
+- Le nom du TD est déduit automatiquement du nom de branche : `dev_td03` → `td03`
+
+### Workflow côté enseignant (par TD)
+
+1. Finaliser et exécuter le notebook de correction (`tdXX_correction.ipynb`)
+2. Générer le JSON : `python templates/tests/generate_expected.py tdXX_correction.ipynb tdXX_expected.json`
+3. Relire le JSON : supprimer les cellules de configuration, HTML, images
+4. Déposer `tdXX_expected.json` dans `templates/tests/` du dépôt du cours
+5. Pusher → les tests s'activent automatiquement pour tous les étudiants déjà configurés
+
+### Workflow côté étudiant (une seule fois, en TD02)
+
+1. Récupérer `templates/tests/tests_td.yml` depuis le dépôt du cours
+2. Créer `.github/workflows/tests_td.yml` dans leur repo personnel en collant le contenu
+   (GitHub crée automatiquement les dossiers `.github/` et `workflows/`)
+3. Message de commit : `Add GitHub Actions workflow`
+4. À partir du TD03 : push sur `dev_tdXX` → Actions se déclenche automatiquement
+
+**Infographies TD02 — plan complet :**
+- 01 — Qu'est-ce que GitHub
+- 02 — Créer et explorer un dépôt (`upjv-python-datascience`)
+- 03 — Rédiger son README (syntaxe Markdown + template étudiant)
+- 04 — Déposer le notebook TD01 sur GitHub
+- 05 — Modifier le contenu d'un dépôt (créer / uploader / dossier / modifier / supprimer)
+- 06 — Utilisation des branches (créer, branche par défaut, changer) ← à créer
+- 07 — Protection des branches (règle main, reviewer obligatoire) ← à créer
+- 08 — Workflow étudiant TD03+ (schéma complet du cycle) ← à créer (finale TD02)

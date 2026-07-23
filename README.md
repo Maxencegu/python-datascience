@@ -228,11 +228,17 @@ Chaque séance suit le même workflow.
       Réalisation des exercices      ← tous les TD (20 pts)
                     │
                     ▼
-      Sauvegarde sur GitHub          ← à partir du TD2
+   Sauvegarde sur GitHub             ← à partir du TD2
+   (branche dev_tdXX)
                     │
                     ▼
-            GitHub Actions           ← à partir du TD3
-      (vérification automatique)
+       GitHub Actions                ← à partir du TD3
+  (tests auto sur dev_tdXX)
+                    │
+                    ▼
+   Pull Request → main               ← à partir du TD3
+   + review par un collègue
+   (reviewer obligatoire)
                     │
                     ▼
         Google Forms (quiz)          ← à partir du TD3 (10 pts)
