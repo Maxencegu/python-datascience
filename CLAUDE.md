@@ -28,7 +28,7 @@ Les corrigés ne sont **jamais** dans ce dépôt public. Ils sont conservés dan
 
 | Élément | Convention | Exemple |
 |---------|-----------|---------|
-| Dossier TD | `tdXX_nom_descriptif` | `td01_fondements_de_github` |
+| Dossier TD | `tdXX_nom_descriptif` | `td01_introduction_a_git` |
 | Notebook énoncé | `tdXX_enonce.ipynb` | `td01_enonce.ipynb` |
 | Notebook correction | `tdXX_correction.ipynb` | `td01_correction.ipynb` |
 | Infographies | `NN_nom_descriptif.png` | `01_gestion_de_versions.png` |
