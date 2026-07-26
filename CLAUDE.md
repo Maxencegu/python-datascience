@@ -282,12 +282,17 @@ templates/tests/
 3. Message de commit : `Add GitHub Actions workflow`
 4. À partir du TD03 : push sur `dev_tdXX` → Actions se déclenche automatiquement
 
-**Infographies TD02 — plan complet :**
+**Infographies TD02 — plan complet (toutes générées) :**
 - 01 — Qu'est-ce que GitHub
 - 02 — Créer et explorer un dépôt (`upjv-python-datascience`)
 - 03 — Rédiger son README (syntaxe Markdown + template étudiant)
 - 04 — Déposer le notebook TD01 sur GitHub
 - 05 — Modifier le contenu d'un dépôt (créer / uploader / dossier / modifier / supprimer)
-- 06 — Utilisation des branches (créer, branche par défaut, changer) ← à créer
-- 07 — Protection des branches (règle main, reviewer obligatoire) ← à créer
-- 08 — Workflow étudiant TD03+ (schéma complet du cycle) ← à créer (finale TD02)
+- 06 — Utilisation des branches (créer, branche par défaut, changer)
+- 07 — Accès au dépôt et collaborateurs (dépôts privés, ajouter un collaborateur)
+- 08 — Token d'accès personnel (PAT)
+- 09 — Cloner et dupliquer un dépôt (clone, fork)
+- 10 — Issues GitHub (créer, assigner, labels, milestone)
+- 11 — Pull Requests (créer, base/compare, reviewer, workflow 6 étapes)
+- 12 — Examiner une Pull Request (Files changed, 3 options, merge, delete branch)
+- 13 — Workflow complet TD03→TD10 (4 phases, 10 étapes, feuille de présence + quiz)

@@ -80,7 +80,7 @@ target/
 
 # Corrigés (retirer la ligne correspondante le jour de la publication)
 assignments/td01_fondements_de_github/td01_correction.ipynb
-assignments/td02_introduction_a_github/td02_correction.ipynb
+assignments/td02_introduction_aux_concepts_de_github/td02_correction.ipynb
 assignments/td03_bases_de_python/td03_correction.ipynb
 assignments/td04_fonctions_et_numpy/td04_correction.ipynb
 assignments/td05_matplotlib_et_pandas/td05_correction.ipynb
