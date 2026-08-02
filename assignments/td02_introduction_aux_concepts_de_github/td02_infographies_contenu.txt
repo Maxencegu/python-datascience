@@ -1,0 +1,800 @@
+================================================================
+TD2 · GITHUB · PYTHON DATA SCIENCE — UPJV AMIENS
+Contenu complet des 13 infographies
+================================================================
+
+
+================================================================
+INFOGRAPHIE 01 — GitHub : Héberger, Collaborer et Partager vos Projets
+================================================================
+
+GitHub est un service d'hébergement dans le cloud qui s'appuie sur Git pour stocker vos projets, faciliter la collaboration et vous connecter à des millions de projets open source.
+
+--- DÉFINITION : Qu'est-ce que GitHub ? ---
+
+Service d'hébergement cloud
+GitHub permet de déposer et de suivre des projets via internet — le plus souvent du code — sans stocker de gros fichiers localement.
+
+Contrôle de versions en ligne
+Ce suivi s'appelle le contrôle de versions. GitHub fournit des ressources à la demande grâce au cloud (stockage, accessibilité, etc.).
+
+La plateforme la plus populaire
+Des alternatives existent — GitLab, Bitbucket — mais GitHub reste de loin la plus répandue dans le monde académique et professionnel.
+
+--- UTILISATIONS : À quoi sert GitHub ? ---
+
+Stocker et suivre des projets
+Conservez l'intégralité de vos fichiers et de leur historique dans un dépôt accessible partout, depuis n'importe quel appareil.
+
+Collaborer avec d'autres
+Plusieurs personnes peuvent travailler simultanément sur le même projet. GitHub stocke tout dans le cloud, ce qui rend la collaboration très simple.
+
+Réseau social & open source
+Connectez-vous à d'autres utilisateurs, explorez des projets publics, inspirez-vous de leur code ou proposez des améliorations à des projets existants.
+
+--- DISTINCTION CLÉ : GitHub vs Git ---
+
+Git — logiciel indépendant
+Git est un logiciel de contrôle de versions qui fonctionne sans GitHub ni aucune autre plateforme. Il s'exécute localement sur votre machine.
+
+GitHub — dépend entièrement de Git
+GitHub facilite la gestion de projets et la collaboration en s'appuyant sur Git. Sans Git, GitHub n'existe pas.
+
+À RETENIR :
+On ne peut pas utiliser GitHub sans Git.
+En revanche, on peut très bien utiliser Git sans GitHub.
+
+--- LE DÉPÔT GITHUB ---
+
+Un projet = un dépôt
+Un dépôt contient tous les fichiers d'un projet ainsi que l'historique complet de toutes les versions. GitHub est construit au-dessus de Git — d'où son nom.
+Comme ce dépôt est stocké sur internet, on l'appelle dépôt distant, par opposition au dépôt local enregistré sur votre ordinateur (dans le dossier caché .git).
+
+Dépôt local vs Dépôt distant :
+  LOCAL — Dépôt local
+    Sur votre ordinateur
+    Dossier .git caché
+    Suivi par Git
+  ⇄
+  DISTANT — Dépôt GitHub
+    Sur internet, dans le cloud
+    Accessible à tous
+    Synchronisé avec Git
+
+
+================================================================
+INFOGRAPHIE 02 — Créer et Explorer un Dépôt GitHub
+================================================================
+
+Un dépôt GitHub centralise tous les fichiers d'un projet et leur historique. Voici comment en créer un et le configurer correctement.
+
+--- ÉTAPE 1 : Démarrer la création ---
+
+Option A — Menu « + »
+Depuis n'importe quelle page GitHub, cliquer sur le signe + en haut à droite puis choisir New repository dans le menu déroulant.
+
+Option B — Vue des dépôts
+Depuis la liste de vos dépôts, cliquer sur le bouton vert "New". Les deux options mènent à la même page Create a new repository.
+
+--- ÉTAPE 2 : Paramétrer le dépôt ---
+
+Nom du dépôt
+Utiliser exactement ce nom : upjv-python-datascience
+Ce sera votre dépôt personnel pour tout le cours.
+
+Description
+Saisir : Travaux dirigés Python & Data Science — UPJV Amiens
+
+Visibilité
+  Public  — visible par tout le monde — vous contrôlez qui peut modifier.
+  Private — accessible uniquement aux collaborateurs invités.
+
+--- ÉTAPE 3 : Fichiers initiaux ---
+
+README
+Guide du projet : objectif, installation, usage. Indispensable — c'est la première chose que les visiteurs lisent.
+
+.gitignore
+Liste des fichiers à ne jamais versionner (données confidentielles, fichiers système...). Choisir le modèle Python pour ce cours.
+
+Licence
+Définit les droits d'utilisation du code. Choisir None applique le droit d'auteur par défaut.
+
+--- EXPLORER UN DÉPÔT ---
+
+Code       — Liste tous les dossiers et fichiers du projet. Point d'entrée principal du dépôt.
+About      — Description courte du projet, affichée à droite. Modifiable via l'icône engrenage.
+Issues     — Suivi des tâches et des problèmes. Espace d'échange entre collaborateurs.
+Pull Requests — Demandes de modification du projet. Compare les changements proposés avec la version actuelle.
+Settings   — Modifier le nom, la visibilité et les autorisations d'accès du dépôt.
+
+Bon à savoir : un dépôt Public est visible par tout le monde, mais seuls les collaborateurs autorisés peuvent y apporter des modifications. Les fichiers README et .gitignore sont créés automatiquement si vous les sélectionnez lors de la création.
+
+
+================================================================
+INFOGRAPHIE 03 — README et Workflow Étudiant
+================================================================
+
+Le README est la vitrine de votre dépôt. À partir du TD3, il documente aussi votre avancement dans le cours. Maîtriser Markdown vous permet de le rédiger efficacement.
+
+--- SYNTAXE : Les bases du Markdown ---
+
+Titres :
+  # Titre principal   → Titre H1 (le plus grand)
+  ## Sous-titre       → Titre H2
+  ### Section         → Titre H3
+
+Mise en forme du texte :
+  *italique*   → italique
+  **gras**     → gras
+  `code`       → code inline
+
+Liens et images :
+  [texte](https://url.com)  → lien cliquable
+  ![alt](image.png)         → image affichée
+
+Éditer sur GitHub
+Dans l'onglet Code du dépôt, cliquer sur l'icône crayon dans l'aperçu du README pour ouvrir l'éditeur. Basculer entre Edit et Preview pour vérifier le rendu.
+
+--- VOTRE README : Ce que doit contenir votre README ---
+
+Titre & présentation
+Votre nom, votre formation (L3 / M1 Économie, UPJV) et l'intitulé du cours. C'est la première chose que l'on voit.
+
+Description du dépôt
+Expliquer brièvement l'objectif : ce dépôt contient vos travaux dirigés de Python & Data Science réalisés sur Google Colab.
+
+Organisation — liste des TD
+Un tableau ou une liste des notebooks disponibles avec leur statut (✅ rendu / ❌ en cours). Donne une vue d'ensemble de votre avancement.
+
+Crédits
+Mentionner le cours et l'enseignant. Si vous utilisez des données externes, citer les sources.
+
+--- VOTRE README — MODÈLE MARKDOWN À SAISIR ---
+
+# Python & Data Science — UPJV Amiens
+
+**Étudiant-e :** Prénom Nom
+**Formation :** L3 Économie / M1 Économie
+**Année :** 2026-2027
+
+## Description
+
+Ce dépôt contient mes travaux dirigés du cours
+Python & Data Science réalisés sur Google Colab.
+
+## Travaux dirigés
+
+| TD | Sujet | Statut |
+|----|-------|--------|
+| TD1 | Introduction à Git | ✅ |
+| TD2 | Introduction à GitHub | ✅ |
+| TD3 | Les bases de Python | ❌ |
+
+## Crédits
+
+Cours de M. Guéry — Faculté d'Économie, UPJV Amiens
+
+--- APERÇU RENDU SUR GITHUB ---
+
+Python & Data Science — UPJV Amiens
+
+Étudiant-e : Prénom Nom
+Formation : L3 Économie / M1 Économie
+Année : 2026-2027
+
+Description
+Ce dépôt contient mes travaux dirigés du cours Python & Data Science réalisés sur Google Colab.
+
+Travaux dirigés
+  TD1 | Introduction à Git     | ✅
+  TD2 | Introduction à GitHub  | ✅
+  TD3 | Les bases de Python    | ❌
+
+Crédits
+Cours de M. Guéry — Faculté d'Économie, UPJV Amiens
+
+
+================================================================
+INFOGRAPHIE 04 — Déposer son Notebook TD01 sur GitHub
+================================================================
+
+Votre notebook TD01 est enregistré sur Google Drive. Voici comment le transférer dans votre dépôt upjv-python-datascience pour le versionner sur GitHub.
+
+--- AVANT DE COMMENCER : Récupérer le notebook depuis Colab ---
+
+Option A — Depuis Colab (recommandé)
+Ouvrir le notebook TD01 dans Colab.
+Aller dans Fichier → Télécharger → Télécharger le fichier .ipynb.
+Le fichier td01_enonce.ipynb est téléchargé sur votre ordinateur.
+
+Option B — Depuis Google Drive
+Ouvrir drive.google.com.
+Trouver le fichier td01_enonce.ipynb dans le dossier Colab Notebooks.
+Clic droit → Télécharger.
+
+--- RÉSULTAT ATTENDU : Structure de votre dépôt après le dépôt ---
+
+upjv-python-datascience/
+  README.md          ✅ fait
+  .gitignore         ✅ fait
+  td01_enonce.ipynb  ← à ajouter
+
+Le notebook sera visible directement à la racine du dépôt. GitHub affiche un aperçu du notebook lorsqu'on clique dessus.
+
+--- ÉTAPES — UPLOADER LE FICHIER SUR GITHUB ---
+
+1. Ouvrir le dépôt
+   Aller sur github.com et ouvrir votre dépôt upjv-python-datascience.
+
+2. Add file
+   Cliquer sur le bouton Add file puis choisir Upload files.
+
+3. Glisser-déposer
+   Glisser le fichier td01_enonce.ipynb depuis votre ordinateur dans la zone de dépôt.
+
+4. Message de commit
+   Saisir un message clair dans le champ Commit changes :
+   Add TD01 notebook
+
+5. Confirmer ✅
+   Cliquer sur le bouton vert Commit changes. Le notebook est maintenant versionné sur GitHub.
+
+
+================================================================
+INFOGRAPHIE 05 — Modifier le Contenu d'un Dépôt GitHub
+================================================================
+
+GitHub permet d'ajouter, modifier et supprimer des fichiers directement depuis le navigateur, sans passer par le terminal.
+
+--- AJOUTER : Créer un nouveau fichier ---
+
+1. Cliquer sur Add file → Create new file
+2. Saisir le nom avec son extension : requirements.txt
+3. Écrire le contenu dans la zone d'édition
+4. Saisir un message de commit : Add requirements file
+5. Cliquer sur Commit changes
+
+--- UPLOADER : Déposer un fichier local ---
+
+1. Cliquer sur Add file → Upload files
+2. Glisser-déposer le fichier dans la zone — ex. : td01_enonce.ipynb
+3. Saisir un message de commit : Add TD01 notebook
+4. Cliquer sur Commit changes
+
+Plusieurs fichiers peuvent être glissés en même temps.
+
+--- ORGANISER : Créer un nouveau dossier ---
+
+1. Cliquer sur Add file → Create new file
+2. Taper le nom du dossier suivi de / puis le nom d'un fichier : td02/README.md
+3. GitHub ne permet pas les dossiers vides — le fichier sert de repère.
+4. Saisir un message et commiter : Add td02 folder
+
+--- MODIFIER : Éditer un fichier existant ---
+
+1. Cliquer sur le fichier à modifier (ex. : README.md)
+2. Cliquer sur l'icône crayon ✏️ en haut à droite pour ouvrir l'éditeur
+3. Ajouter, modifier ou retirer le contenu souhaité
+4. Saisir un message de commit et valider
+
+Utiliser l'onglet Preview pour vérifier le rendu Markdown avant de commiter.
+
+--- SUPPRIMER : Effacer un fichier du dépôt ---
+
+1. Cliquer sur le fichier à supprimer
+2. Cliquer sur l'icône corbeille 🗑️ à droite du crayon
+3. Saisir un message de commit et valider
+
+La suppression est enregistrée comme un commit — le fichier reste accessible dans l'historique Git.
+
+
+================================================================
+INFOGRAPHIE 06 — Utilisation des Branches GitHub
+================================================================
+
+Une branche isole vos modifications sans affecter la version stable. Dans ce cours, chaque TD dispose de sa propre branche de développement avant d'être validé sur main.
+
+--- CONCEPT : Qu'est-ce qu'une branche ? ---
+
+Travail en isolation
+Chaque branche isole un ensemble de modifications. Les changements d'une branche n'affectent pas les autres tant qu'elles ne sont pas fusionnées.
+
+Éviter les erreurs sur main
+En travaillant sur une branche dédiée, vous ne risquez pas d'écraser accidentellement la version finale et validée de votre travail.
+
+Main = version validée
+La branche main ne contient que des notebooks testés et approuvés. On n'y intègre le travail qu'une fois terminé et relu.
+
+--- BRANCHE PAR DÉFAUT : La branche main ---
+
+Créée automatiquement
+La branche main est créée en même temps que le dépôt. Elle existe toujours et ne doit jamais être supprimée.
+
+Contenu final uniquement
+Dans ce cours, main ne contient que les notebooks dont les tests GitHub Actions passent et qu'un collègue a approuvés.
+
+Voir les branches actives
+Onglet Code → l'icône branches affiche le nombre total de branches dans votre dépôt.
+
+--- CONVENTION DU COURS : Créer votre branche de travail ---
+
+NOMMAGE : dev_tdXX  (ex : dev_td03, dev_td04...)
+
+1. Onglet Code → cliquer sur l'icône branches
+2. Cliquer sur New branch
+3. Saisir le nom : dev_td03
+4. Source : main (laisser par défaut)
+5. Cliquer sur Create branch
+
+Le nom dev_tdXX est obligatoire : GitHub Actions détecte automatiquement le TD à tester à partir du nom de branche.
+
+--- NAVIGATION : Changer de branche ---
+
+1. Onglet Code → cliquer sur le menu déroulant qui affiche le nom de la branche active
+2. Sélectionner la branche souhaitée dans la liste
+3. L'explorateur de fichiers se met à jour — chaque branche a son propre contenu indépendant
+
+Un fichier uploadé sur dev_td03 n'est pas visible sur main tant qu'il n'a pas été fusionné via une Pull Request validée.
+
+--- À CONFIGURER MAINTENANT : Protéger la branche main ---
+
+1. Onglet Settings → section Branches
+2. Cliquer sur Add branch protection rule
+3. Branch name pattern : main
+4. Cocher Require a pull request before merging
+5. Laisser Required approvals à 1 — un collègue doit valider avant le merge
+6. Cliquer sur Create pour enregistrer la règle
+
+Sans cette règle, n'importe qui peut modifier main directement. La règle oblige à passer par une Pull Request approuvée par un pair.
+
+
+================================================================
+INFOGRAPHIE 07 — Accès au Dépôt et Collaborateurs
+================================================================
+
+Chaque dépôt GitHub est soit public, soit privé. Comprendre cette distinction et savoir gérer les accès est essentiel pour collaborer efficacement.
+
+--- VISIBILITÉ : Public ou Privé ? ---
+
+Public
+Le dépôt est visible par tout le monde sur internet, même sans compte GitHub. Quiconque peut lire le code et les fichiers.
+Seuls les collaborateurs autorisés peuvent modifier le contenu.
+
+Private
+Le dépôt est invisible pour quiconque n'est pas invité. L'URL renvoie une page introuvable pour les non-connectés ou non-autorisés.
+
+Identifier la visibilité
+Le badge Public ou Private est affiché directement à côté du nom du dépôt dans l'onglet Code.
+
+--- BONNES PRATIQUES : Quand utiliser un dépôt privé ? ---
+
+Données personnelles
+Si vos données contiennent des informations sur des personnes (noms, adresses, coordonnées bancaires...), un dépôt public enfreint les règles de confidentialité.
+
+Code commercial ou propriétaire
+Si vous développez un logiciel destiné à la vente ou un modèle d'IA interne à une entreprise, le code ne doit pas être accessible librement.
+
+Travaux en cours (brouillons)
+Un dépôt peut commencer en privé le temps du développement, puis être rendu public une fois le projet finalisé.
+
+! RÈGLE DU COURS
+Ne jamais déposer de données personnelles ou de clés API dans un dépôt public, même accidentellement.
+
+--- CONFIGURATION : Créer un dépôt privé ---
+
+Lors de la création
+Sur la page New repository, choisir Private au lieu de Public avant de cliquer sur Create repository.
+
+Sur un dépôt existant
+Onglet Settings → section Danger Zone → Change visibility.
+Cette action est irréversible sans confirmation explicite.
+
+Dans ce cours
+Votre dépôt upjv-python-datascience doit rester Public pour que GitHub Actions et les revues de vos collègues fonctionnent.
+
+--- AJOUTER UN COLLABORATEUR ---
+
+Étapes pour inviter un collaborateur :
+1. Onglet Settings de votre dépôt
+2. Section Access → cliquer sur Collaborators
+3. Cliquer sur le bouton vert Add people
+4. Rechercher par nom d'utilisateur GitHub (le plus fiable) ou par adresse e-mail
+5. Sélectionner la personne puis cliquer sur Add to this repository
+6. Le collaborateur reçoit une invitation par e-mail — il doit l'accepter pour accéder au dépôt
+
+--- TD INDIVIDUELS (TD03 → TD10) : Dépôt public — ajouter un collègue comme reviewer ---
+→ Échangez vos noms d'utilisateur GitHub avec un camarade et invitez-vous mutuellement.
+→ Ce collègue pourra approuver vos Pull Requests avant le merge sur main.
+→ Le statut Pending Invite disparaît une fois l'invitation acceptée.
+
+--- PROJETS EN ÉQUIPE (MP1, MP2) : Dépôt privé — un membre crée, les autres rejoignent ---
+→ Un membre du groupe crée un nouveau dépôt en choisissant Private.
+→ Il invite les autres membres du binôme / trinôme comme collaborateurs.
+→ Chacun travaille sur sa propre branche et soumet une PR relue par le groupe.
+→ Le dépôt privé protège le travail du groupe — les autres équipes ne peuvent pas le voir.
+
+
+================================================================
+INFOGRAPHIE 08 — Token d'Accès Personnel (PAT)
+================================================================
+
+Le PAT remplace le mot de passe GitHub lorsque vous utilisez Git depuis un terminal. Il n'est pas nécessaire dans ce cours, mais indispensable dès que vous travaillerez en local avec VS Code.
+
+--- DÉFINITION : Qu'est-ce qu'un PAT ? ---
+
+Une alternative sécurisée au mot de passe
+Depuis août 2021, GitHub n'accepte plus les mots de passe pour les commandes Git en terminal (clone, push, pull...). Le PAT les remplace.
+
+Lié à votre compte, pas à un dépôt
+Le PAT prouve que vous êtes bien vous auprès de GitHub. Les droits sur un dépôt particulier sont vérifiés séparément.
+
+Chaque personne a le sien
+Créateur du dépôt, collaborateur A, collaborateur B — chacun crée son propre PAT depuis les paramètres de son propre compte GitHub.
+
+--- CAS D'USAGE : Quand utiliser un PAT ? ---
+
+Terminal local (avec VS Code ou tout terminal Git sur votre ordinateur)
+Obligatoire pour : git clone, git push, git pull vers un dépôt GitHub.
+
+Dépôt privé dans Colab
+Si vous utilisez !git clone dans une cellule Colab pour cloner un dépôt privé, GitHub demandera un PAT.
+
+Pas nécessaire
+Via l'interface web GitHub (upload, édition, PR...) ou pour les dépôts publics depuis Colab — aucun PAT requis.
+
+DANS CE COURS
+Tout se fait via l'interface web — vous n'aurez pas besoin de PAT. Gardez cette fiche pour votre future utilisation de VS Code.
+
+--- À RETENIR : Propriétés importantes ---
+
+Durée de vie limitée
+Un PAT a une date d'expiration (7, 30, 60, 90 jours ou personnalisée). Passé ce délai, il cesse de fonctionner et doit être régénéré.
+
+Périmètre (scope) restreint
+Lors de la création, vous choisissez ce que le PAT autorise. Pour accéder à vos dépôts, cocher repo suffit dans la plupart des cas.
+
+Visible une seule fois
+Le PAT s'affiche une seule fois après sa création. Si vous fermez la page sans le copier, vous devrez en générer un nouveau.
+
+! NE JAMAIS PARTAGER
+Votre PAT donne accès à l'ensemble de votre compte GitHub. Ne le partagez avec personne, ne le commitez jamais dans un dépôt.
+
+--- CRÉER SON PAT — DEPUIS LES PARAMÈTRES DE VOTRE COMPTE GITHUB ---
+
+1. Ouvrir les paramètres du compte
+   Cliquer sur votre avatar en haut à droite → Settings (paramètres de votre compte, pas du dépôt)
+
+2. Developer settings
+   Faire défiler jusqu'en bas du menu gauche → cliquer sur Developer settings
+
+3. Personal access tokens
+   Personal access tokens → Tokens (classic) → cliquer sur Generate new token
+
+4. Configurer le token
+   Donner un nom (Note), choisir une expiration, cocher le scope repo → cliquer sur Generate token
+
+5. Copier et sauvegarder ✅
+   Copier immédiatement le token affiché. Le coller dans un gestionnaire de mots de passe — il ne sera plus visible ensuite.
+
+Format du PAT : ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Le PAT ressemble à une longue chaîne de caractères préfixée par ghp_. Lors d'une commande Git, collez-le à la place de votre mot de passe lorsque GitHub le demande.
+
+
+================================================================
+INFOGRAPHIE 09 — Cloner et Dupliquer (Fork) un Dépôt
+================================================================
+
+Il existe deux façons de copier un dépôt GitHub. Le clonage crée une copie locale liée à l'original. La duplication crée une copie indépendante sur votre compte GitHub.
+
+--- CLONE : Cloner un dépôt ---
+
+Copie locale liée à l'original
+Le clonage crée une copie du dépôt sur votre ordinateur. Le lien avec le dépôt GitHub est conservé — vous pouvez envoyer (push) vos modifications et récupérer (pull) les mises à jour des autres.
+
+Qui peut cloner ?
+N'importe qui peut cloner un dépôt public. Pour un dépôt privé, le propriétaire doit vous avoir ajouté comme collaborateur.
+
+Étapes :
+1. Onglet Code → bouton vert Code → onglet HTTPS
+2. Copier l'URL (icône presse-papiers)
+3. Dans le terminal : git clone <URL>
+4. Saisir son nom d'utilisateur et son PAT si demandé
+
+Utilisé avec VS Code pour travailler en local sur votre machine. Requiert Git installé et un PAT pour les dépôts privés.
+
+--- FORK : Dupliquer un dépôt ---
+
+Copie indépendante sur votre GitHub
+Le fork crée une copie complète du dépôt sur votre propre compte GitHub. Vous pouvez expérimenter librement sans risquer d'affecter le dépôt d'origine.
+
+Qui peut forker ?
+N'importe qui peut forker un dépôt public. Pour un dépôt privé, le propriétaire doit activer explicitement cette option.
+
+Étapes :
+1. Bouton Fork en haut à droite du dépôt
+2. Choisir Create a new fork
+3. Modifier le nom si besoin, choisir la branche source
+4. Cliquer sur Create fork
+
+Utilisé pour contribuer à un projet open source que vous ne possédez pas. Les modifications sont proposées via une Pull Request vers le dépôt original.
+
+--- CLONE VS FORK — COMPARAISON ---
+
+                      CLONE                    FORK
+Où vit la copie ?     Sur votre ordinateur     Sur votre compte GitHub
+Lien avec l'original? Oui — push / pull        Non — copie indépendante
+Nécessite Git installé? Oui                    Non — tout sur GitHub
+Propose des modif. via? Push direct (si collab.) Pull Request
+Usage typique         Travailler en local (VS Code)  Contribuer à l'open source
+
+DANS CE COURS
+→ Vous n'aurez besoin ni du clone ni du fork pour les TD — tout se fait via l'interface web GitHub et Google Colab.
+→ Le clone sera utile dès que vous travaillerez avec VS Code en local, notamment lors de vos stages ou projets professionnels.
+
+
+================================================================
+INFOGRAPHIE 10 — Issues GitHub
+================================================================
+
+Les issues sont l'outil de communication et de suivi de GitHub. Elles permettent de signaler un problème, de planifier une tâche ou d'échanger avec les collaborateurs d'un projet.
+
+--- DÉFINITION : Qu'est-ce qu'une issue ? ---
+
+Un outil de suivi et de communication
+Les issues servent à signaler un bug, planifier une tâche, poser une question ou noter une idée d'amélioration liée au projet.
+
+Où les trouver ?
+Onglet Issues du dépôt — toutes les issues ouvertes et fermées sont regroupées ici.
+
+Qui peut créer une issue ?
+Sur un dépôt public, n'importe quel utilisateur GitHub connecté peut ouvrir une issue. Sur un dépôt privé, seuls les collaborateurs peuvent le faire.
+
+Statut :
+  Open   — en cours de traitement
+  Closed — résolue ou abandonnée
+
+--- CRÉATION : Créer une nouvelle issue ---
+
+Étapes :
+1. Onglet Issues → bouton New issue
+2. Saisir un titre clair et descriptif
+3. Rédiger la description en Markdown — utiliser Preview pour vérifier le rendu
+4. Cliquer sur Submit new issue
+
+Fermer une issue
+Une fois résolue, cliquer sur Close with comment.
+  Completed  — tâche accomplie
+  Not planned — abandonnée ou hors scope
+
+--- COLLABORATION : Assigner et mentionner ---
+
+Assigner (Assignees)
+Désigne qui doit traiter l'issue. Section Assignees à droite → icône engrenage → choisir parmi les collaborateurs du dépôt.
+
+Mentionner (@pseudo)
+Notifie une personne dans le corps ou les commentaires de l'issue. Taper @pseudo pour mentionner n'importe quel utilisateur GitHub.
+
+Différence clé :
+  Assigner   → précise qui travaille sur l'issue
+  Mentionner → s'assure que la bonne personne lit le message
+
+--- FONCTIONNALITÉS AVANCÉES ---
+
+Commenter une issue
+Sous une issue ouverte, une zone de saisie Markdown permet d'ajouter un commentaire. Cliquer sur le bouton vert pour publier.
+Les échanges restent groupés sur la même issue — plus facile à suivre qu'un fil d'e-mails.
+
+Lier une autre issue
+Dans un commentaire, taper # seul — GitHub affiche la liste des issues du dépôt. Cliquer sur celle souhaitée pour créer un lien cliquable.
+Utile quand deux tâches sont liées ou dépendantes l'une de l'autre.
+
+Citer un commentaire
+Sur un commentaire → trois points ... → Quote reply. Le texte est automatiquement formaté en citation Markdown (chevron >).
+Pratique pour répondre à un message précis dans un fil de discussion long.
+
+--- DANS CE COURS ---
+→ Signalez une erreur dans un notebook ou une question sur un exercice via une issue sur le dépôt du cours — c'est plus visible qu'un e-mail.
+→ Pendant les projets en équipe (MP1, MP2), utilisez les issues pour vous répartir les tâches et suivre l'avancement sur votre dépôt privé.
+
+
+================================================================
+INFOGRAPHIE 11 — Pull Requests
+================================================================
+
+Une pull request propose de fusionner les modifications d'une branche dans une autre. Elle permet de faire relire le travail avant de l'intégrer définitivement dans main.
+
+--- DÉFINITION : Qu'est-ce qu'une pull request ? ---
+
+Une proposition de fusion
+Une pull request (PR) informe les collaborateurs des changements que vous souhaitez apporter. Le propriétaire du dépôt peut les examiner et approuver avant de les intégrer.
+
+Pourquoi travailler sur une branche ?
+La bonne pratique est de travailler sur une branche dédiée plutôt que directement sur main — cela garantit que main ne contient que du travail finalisé et validé.
+
+L'objectif : fusionner deux branches
+Une PR réussie aboutit au merge de la branche de travail dans la branche cible. Les modifications sont alors intégrées dans main.
+
+--- CRÉATION : Créer une pull request ---
+
+Étapes :
+1. Onglet Pull requests → bouton New pull request
+2. Choisir les deux branches à comparer
+3. Vérifier les modifications affichées et l'absence de conflits
+4. Cliquer sur Create pull request
+
+Base vs Compare :
+  compare : dev_td03  →  base : main
+  Base    = branche cible (où les changements vont arriver)
+  Compare = branche source (où les changements ont été faits)
+
+--- DÉTAILS : Renseigner et assigner ---
+
+Titre
+Donnez un titre clair décrivant l'objectif de la PR — par exemple : TD03 — Notebook complété.
+
+Description (optionnelle)
+Zone Markdown pour préciser ce qui a été fait, signaler des points à vérifier ou poser des questions au reviewer.
+
+Reviewers
+Désignez le collègue qui doit valider votre PR dans la section Reviewers (icône engrenage). Sans approbation, le merge sur main est bloqué par la règle de protection.
+
+Assignees (optionnel)
+Indique qui travaille sur cette PR — comme pour les issues, généralement vous-même.
+
+--- WORKFLOW DANS CE COURS — DE LA BRANCHE AU MERGE ---
+
+1. Créer la branche
+   Depuis main : créer la branche dev_tdXX sur votre dépôt GitHub
+
+2. Uploader le notebook
+   Déposer le notebook complété sur la branche dev_tdXX
+
+3. GitHub Actions
+   Les tests se déclenchent automatiquement sur la branche — attendre que tout soit ✅ passing
+
+4. Ouvrir une PR
+   dev_tdXX → main — ajouter le titre et désigner le reviewer
+
+5. Review collègue
+   Le reviewer examine les modifications et clique sur Approve
+
+6. Merge sur main ✅
+   Cliquer sur Merge pull request — le notebook est intégré dans main
+
+Règle de protection — La branche main est protégée : un merge direct est impossible. Toute modification passe obligatoirement par une pull request avec au moins 1 approbation d'un collègue.
+
+
+================================================================
+INFOGRAPHIE 12 — Examiner une Pull Request
+================================================================
+
+Après avoir ouvert une pull request, un reviewer examine les modifications proposées et choisit de les approuver, de commenter, ou de demander des corrections avant la fusion.
+
+--- RÔLES : Demander une review ---
+
+Désigner le reviewer
+Dans la PR, section Reviewers → icône engrenage → choisir le collègue qui va relire. Il reçoit une notification GitHub.
+
+Assignee vs Reviewer :
+  Assignee → personne responsable de la PR (l'auteur des changements)
+  Reviewer → personne qui examine et approuve les modifications
+
+Côté reviewer :
+1. Onglet Pull requests du dépôt
+2. Cliquer sur la PR à examiner
+3. Onglet Files changed
+
+--- EXAMEN : Lire les modifications ---
+
+Vue Files changed
+Affiche tous les fichiers modifiés avec ce qui a été ajouté (vert) et supprimé (rouge).
+
+Exemple :
+  # Mon notebook TD02
+  - ancien contenu    (rouge — supprimé)
+  + nouveau contenu   (vert — ajouté)
+  ## Section suivante
+
+Commenter une ligne précise
+Survoler une ligne → icône + bleue → une zone de commentaire s'ouvre. Sélectionner plusieurs lignes avant de cliquer pour référencer un bloc entier.
+
+Soumettre la review
+Cliquer sur Review changes pour ouvrir le panneau de réponse et choisir une option.
+
+--- RÉPONSE : Les 3 options du reviewer ---
+
+Comment
+Feedback ou suggestion — non bloquant. La PR peut être mergée malgré le commentaire.
+
+Request changes
+Les corrections sont obligatoires. Le merge est bloqué jusqu'à ce que l'auteur corrige et demande une nouvelle review (Re-request review).
+
+Approve ✅
+Tout est conforme. Le merge sur main est débloqué — l'auteur peut cliquer sur Merge pull request.
+
+--- APRÈS L'APPROBATION — MERGER ET NETTOYER ---
+
+Fusionner la pull request :
+1. Cliquer sur Merge pull request
+2. Confirmer avec Confirm merge
+3. Les modifications de dev_tdXX sont intégrées dans main
+4. Cliquer sur Delete branch pour supprimer la branche source
+
+Supprimer la branche après le merge garde le dépôt propre. Une branche par TD suffit : une fois mergée, elle n'est plus utile.
+
+Restaurer une branche supprimée
+Si la branche a été supprimée par erreur, deux options :
+  Option 1 — Rester sur la page de la PR : le bouton Delete branch devient Restore branch.
+  Option 2 — Onglet Pull requests → filtre Closed → sélectionner la PR → cliquer sur Restore branch en bas de page.
+
+Dans ce cours
+Pour chaque TD, le rôle du reviewer revient au collègue ajouté comme collaborateur.
+
+Cycle attendu :
+1. Auteur ouvre la PR et désigne le reviewer
+2. Reviewer examine et clique Approve
+3. Auteur merge sur main et supprime la branche
+
+Puis on inverse les rôles pour le TD du collègue.
+
+
+================================================================
+INFOGRAPHIE 13 — Workflow complet — de chaque TD
+================================================================
+
+BREADCRUMB : TD3 → TD10 · GITHUB · PYTHON DATA SCIENCE — UPJV AMIENS
+
+À partir du TD03, chaque séance suit ce cycle en 10 étapes. Répétez-le à chaque TD jusqu'à ce qu'il devienne un réflexe.
+
+--- PHASE 1 : Début de séance ---
+
+1. Feuille de présence
+   Remplir le Google Forms partagé en début de séance
+   10 pts
+
+2. Ouvrir le notebook
+   Cliquer sur le badge Open in Colab dans le dépôt du cours — le notebook s'ouvre dans votre environnement Google Colab
+
+3. Créer la branche
+   Sur votre dépôt GitHub : créer dev_tdXX depuis main avant de commencer
+
+--- PHASE 2 : Travail dans Colab ---
+
+4. Compléter les exercices
+   Remplacer les ___ par votre code dans chaque cellule exercice.
+   Exécuter les cellules de vérification pour contrôler vos réponses.
+   20 pts
+
+5. Télécharger le notebook
+   Dans Colab : Fichier → Télécharger → Télécharger le fichier .ipynb sur votre ordinateur
+
+--- PHASE 3 : Sauvegarde & Tests ---
+
+6. Uploader sur GitHub
+   Sur la branche dev_tdXX : Add file → Upload files → déposer le fichier .ipynb
+
+7. GitHub Actions
+   Les tests se déclenchent automatiquement après l'upload.
+   Onglet Actions → attendre ✅ passing
+
+--- PHASE 4 : Validation & Clôture ---
+
+8. Ouvrir une Pull Request
+   dev_tdXX → main · Titre : TDXX — Notebook complété · Désigner votre collègue comme Reviewer
+
+9. Review & Merge
+   Collègue : Approve → vous : Merge pull request → Delete branch
+
+10. Quiz fin de séance
+    Répondre au quiz partagé en fin de cours
+    10 pts
+
+--- RÉSUMÉ ---
+
+● Étapes 1–3  : Début
+● Étapes 4–5  : Colab
+● Étapes 6–7  : GitHub + Tests
+● Étapes 8–10 : PR + Merge + Quiz
+
+La branche dev_tdXX est supprimée après chaque merge — une branche propre par TD.
