@@ -102,7 +102,7 @@ Les travaux pratiques sont réalisés avec **Google Colab**, les projets sont ve
 |-----|:-------:|-------------|
 | TD1 | ![QR TD1](assignments/td01_introduction_a_git/assets/qr_td01_presence.png) | [Feuille de présence TD1](https://forms.gle/QY9o9Pjzp7vwyqex6) |
 | TD2 | ![QR TD2](assignments/td02_introduction_aux_concepts_de_github/assets/qr_td02_presence.png) | [Feuille de présence TD2](https://forms.gle/HV5NYSbVuBSgq2Fj7) |
-| TD3 | ⏳ | — |
+| TD3 | ![QR TD3](assignments/td03_bases_de_python/assets/qr_td03_presence.png) | [Feuille de présence TD3](https://forms.gle/1BzdcFskHzuvG5cb7) |
 | TD4 | ⏳ | — |
 | TD5 | ⏳ | — |
 | TD6 | ⏳ | — |
