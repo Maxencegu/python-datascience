@@ -74,8 +74,8 @@ Les travaux pratiques sont réalisés avec **Google Colab**, les projets sont ve
 | README | ✅ |
 | TD1 | ✅ |
 | TD2 | ✅ |
-| TD3 | ⏳ |
-| TD4 | ⏳ |
+| TD3 | ✅ |
+| TD4 | ✅ |
 | TD5 | ⏳ |
 | TD6 | ⏳ |
 | Mini-projet 1 | ⏳ |
