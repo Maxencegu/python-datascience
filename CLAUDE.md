@@ -57,6 +57,57 @@ def afficher_infographie(nom_fichier, largeur=1300):
     display(Image(url=BASE_URL + nom_fichier, width=largeur))
 ```
 
+## Introduction d'un notebook TD
+
+La cellule Markdown d'introduction suit toujours ce plan :
+1. Badge Open in Colab
+2. `# **Introduction**`
+3. Rappel du TD précédent (ce que l'étudiant sait déjà)
+4. Le problème que ce TD va résoudre (accroche)
+5. Présentation des concepts clés (en **gras**)
+6. Liste `Dans ce TD, vous apprendrez à :`
+7. Phrase de clôture `À l'issue de cette séance, vous serez capables de…`
+
+Exemple (TD05) :
+```markdown
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Maxencegu/python-datascience/blob/main/assignments/td05_matplotlib_dictionnaires_et_pandas/td05_enonce.ipynb)
+
+# **Introduction**
+
+Au TD précédent, vous avez découvert les **fonctions** et **NumPy**.
+Vous savez maintenant encapsuler une opération dans une fonction réutilisable,
+importer un module, et effectuer des calculs vectorisés sur des tableaux NumPy.
+
+Mais un tableau NumPy impose un type unique pour toutes ses valeurs.
+Comment stocker à la fois le nom d'un pays, sa capitale et sa population ?
+Et une fois les données en main, comment les visualiser rapidement pour en extraire du sens ?
+
+C'est exactement ce que vous allez apprendre dans ce TD, avec trois outils complémentaires.
+
+**Matplotlib** est la bibliothèque de référence pour la visualisation en Python.
+Avec quelques lignes de code, vous pouvez tracer des courbes, des nuages de points
+et des histogrammes — et les personnaliser entièrement.
+
+Les **dictionnaires** permettent d'associer des clés à des valeurs de types variés.
+Ils sont indispensables pour représenter des données structurées comme un profil pays,
+et constituent la brique de base pour construire un DataFrame Pandas.
+
+**Pandas** apporte la structure de données tabulaire que NumPy ne peut pas offrir :
+le **DataFrame**, un tableau à deux dimensions où chaque colonne peut avoir son propre type.
+C'est l'outil central de tout data scientist Python.
+
+Dans ce TD, vous apprendrez à :
+- tracer des graphiques (courbes, nuages de points, histogrammes) avec Matplotlib ;
+- personnaliser vos visualisations (titres, axes, couleurs, tailles) ;
+- créer et manipuler des dictionnaires (accès, ajout, suppression, imbrication) ;
+- construire un DataFrame Pandas depuis un dictionnaire ou un fichier CSV ;
+- sélectionner des données dans un DataFrame avec `[ ]`, `loc` et `iloc`.
+
+À l'issue de cette séance, vous serez capables de charger un jeu de données réel,
+d'en extraire les observations et variables qui vous intéressent,
+et de produire une visualisation exploitable en quelques lignes de code.
+```
+
 ## Création des infographies
 
 Les infographies sont générées via un script Python/Playwright : HTML écrit directement dans le script → `page.set_content()` → screenshot PNG. **Pas de fichier HTML intermédiaire.**
