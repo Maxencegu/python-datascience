@@ -251,7 +251,8 @@ Ne jamais ajouter dans ce dépôt :
 
 ## Programme (année commune L3/M1 2026-2027)
 
-10 TD + 2 mini-projets. Les noms de dossiers sont à confirmer au fur et à mesure de la création des TDs.
+**8 TD de contenu + 1 examen final = 9 séances × 2h = 18h.**
+Le TD07 intègre le mini-projet 1 (en binôme, en séance, avec quiz). Il n'y a plus de mini-projet à la maison.
 
 | Séance | Contenu | Dossier |
 |--------|---------|---------|
@@ -259,17 +260,17 @@ Ne jamais ajouter dans ce dépôt :
 | TD2 | Introduction à GitHub | `td02_introduction_aux_concepts_de_github` |
 | TD3 | Les bases de Python | à créer |
 | TD4 | Les fonctions, modules et NumPy | à créer |
-| TD5 | Matplotlib, dictionnaires et Pandas | à créer |
-| TD6 | Logique, flux de contrôle, filtrage et boucles | à créer |
-| MP1 | Mini-projet 1 — Analyse exploratoire | à créer |
-| TD7 | Pandas : agrégation et transformation | à créer |
-| TD8 | Pandas : filtrage et opérations conditionnelles | à créer |
-| MP2 | Mini-projet 2 — Nettoyage et transformation | à créer |
-| TD9 | Pandas : fusion de données et jointures | à créer |
-| TD10 | Séries temporelles | `td10_series_temporelles` |
+| TD5 | Matplotlib, dictionnaires et Pandas | `td05_matplotlib_dictionnaires_et_pandas` |
+| TD6 | Logique, flux de contrôle, filtrage et boucles | `td06_logique_flux_de_controle_filtrage_et_boucles` |
+| TD7_MP1 | Mini-projet 1 — Analyse exploratoire en binôme | à créer |
+| TD8 | Pandas : agrégation et transformation | à créer |
+| Examen | Examen final individuel | — |
 
 **Workflow d'une séance (à ne pas modifier sans accord) :**
 GitHub → Correction TD précédent (à partir TD2) → Google Forms présence (10 pts) → Colab → Exercices (20 pts) → Sauvegarde GitHub sur branche `dev_tdXX` (à partir TD2) → GitHub Actions sur branche (à partir TD3) → Pull Request + review collègue → Merge main (à partir TD3) → Quiz fin de séance (10 pts, à partir TD3)
+
+**Gestion du temps en séance :**
+Le quiz de fin de séance est obligatoire et se ferme à la fin du TD. Les étudiants doivent sauter des exercices si nécessaire pour avoir le temps de faire le quiz. Tout le notebook doit être terminé avant le prochain TD.
 
 **Remarques importantes :**
 - Les notebooks TD sont modifiés progressivement : ne jamais remplacer un notebook TD existant intégralement sans confirmation explicite

@@ -77,13 +77,10 @@ Les travaux pratiques sont réalisés avec **Google Colab**, les projets sont ve
 | TD3 | ✅ |
 | TD4 | ✅ |
 | TD5 | ✅ |
-| TD6 | ⏳ |
-| Mini-projet 1 | ⏳ |
-| TD7 | ⏳ |
+| TD6 | 🚧 |
+| TD7 — Mini-projet 1 | ⏳ |
 | TD8 | ⏳ |
-| Mini-projet 2 | ⏳ |
-| TD9 | ⏳ |
-| TD10 | ⏳ |
+| Examen final | ⏳ |
 | Documentation | ⏳ |
 | Jeux de données | ⏳ |
 | FAQ | ⏳ |
@@ -105,11 +102,9 @@ Les travaux pratiques sont réalisés avec **Google Colab**, les projets sont ve
 | TD03 | [Feuille de présence TD3](https://forms.gle/1BzdcFskHzuvG5cb7) |
 | TD04 | [Feuille de présence TD4](https://forms.gle/YDan7Wixd1eehg4E8) |
 | TD05 | [Feuille de présence TD5](https://forms.gle/K12J25Gtbn7tJw7d6) |
-| TD06 | ⏳ |
-| TD07 | ⏳ |
+| TD06 | 🚧 |
+| TD07 — Mini-projet 1 | ⏳ |
 | TD08 | ⏳ |
-| TD09 | ⏳ |
-| TD10 | ⏳ |
 
 ---
 
@@ -174,14 +169,14 @@ Aucune installation de Python n'est nécessaire.
 
 Le cours est composé de :
 
-- **9 Travaux Dirigés**
-- **2 Mini-projets**
-- **1 Test de présence au début de chaque séance**
+- **8 Travaux Dirigés** dont 1 mini-projet en binôme (TD7)
+- **1 Examen final individuel**
+- **1 Feuille de présence au début de chaque séance**
 - **1 Quiz à la fin de chaque séance**
-- **Travail personnel en autonomie**
-- **Projets réalisés en binôme ou trinôme**
 
-Chaque séance dure **2 heures**.
+Chaque séance dure **2 heures** (9 séances × 2h = 18h).
+
+> **Gestion du temps :** le quiz de fin de séance est obligatoire et se ferme à la fin du TD. N'hésitez pas à sauter des exercices pour vous laisser 10 minutes. Tout le notebook doit être terminé avant le prochain TD.
 
 ---
 
@@ -195,12 +190,9 @@ Chaque séance dure **2 heures**.
 | TD4 | Les fonctions, modules et NumPy |
 | TD5 | Matplotlib, dictionnaires et Pandas |
 | TD6 | Logique, flux de contrôle, filtrage et boucles |
-| MP1 | **Mini-projet 1 – Analyse exploratoire** |
-| TD7 | Pandas : agrégation et transformation des données |
-| TD8 | Pandas : filtrage des données et opérations conditionnelles |
-| MP2 | **Mini-projet 2 – Nettoyage et transformation des données** |
-| TD9 | Pandas : fusion de données et jointures |
-| TD10 | Séries temporelles |
+| TD7 | **Mini-projet 1 – Analyse exploratoire en binôme** |
+| TD8 | Pandas : agrégation et transformation des données |
+| — | **Examen final individuel** |
 
 ---
 

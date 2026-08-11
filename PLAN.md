@@ -722,7 +722,7 @@ De 118 à 120 minutes : clôture
 annonce du corrigé ;
 point sur le TD suivant.
 10. Contenu des TD et mini-projets
-Année 1 : programme commun L3/M1
+Année 1 : programme commun L3/M1 (9 séances × 2h = 18h)
 Séance	Contenu principal	Production GitHub
 TD1	Introduction à Git	—
 TD2	Introduction à GitHub	Création du dépôt et premier commit
@@ -730,14 +730,14 @@ TD3	Les bases de Python	Fonctions simples
 TD4	Les fonctions, modules et NumPy	solutions.py avec fonctions NumPy
 TD5	Matplotlib, dictionnaires et Pandas	Premiers graphiques et DataFrames
 TD6	Logique, flux de contrôle, filtrage et boucles	Analyse guidée complète
-MP1	Mini-projet 1 – Analyse exploratoire	Notebook d'analyse autonome
-TD7	Pandas : agrégation et transformation des données	Analyse tabulaire avancée
-TD8	Pandas : filtrage des données et opérations conditionnelles	Nettoyage et filtrage
-MP2	Mini-projet 2 – Nettoyage et transformation des données	Pipeline de traitement
-TD9	Pandas : fusion de données et jointures	Jointures entre DataFrames
-TD10	Séries temporelles	Analyse temporelle
+TD7_MP1	Mini-projet 1 – Analyse exploratoire en binôme (en séance, avec quiz)	Notebook d'analyse en binôme
+TD8	Pandas : agrégation et transformation des données	Analyse tabulaire avancée
+Examen	Examen final individuel	—
 
-Remarque : les deux mini-projets sont des jalons intermédiaires évalués, intercalés entre les TD. Ils permettent de vérifier l'acquisition des compétences avant de passer à la suite.
+Remarques :
+- Le mini-projet MP1 est intégré en TD07 : réalisé en binôme pendant la séance, avec quiz de fin de séance comme tous les autres TD. Il n'y a plus de mini-projet à faire à la maison.
+- Les étudiants qui ne finissent pas les exercices d'un TD peuvent continuer chez eux, tout doit être remis avant le TD suivant. Le quiz doit obligatoirement être fait en séance.
+- Les contenus retirés (Pandas filtrage, jointures, séries temporelles, MP2) constituent la suite naturelle du programme de M1 pour les étudiants ayant suivi ce cours en L3. Le programme L3 est conçu comme un prérequis explicite du programme M1.
 À partir de l’année suivante
 L3
 TD	Sujet
