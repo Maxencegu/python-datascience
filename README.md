@@ -77,7 +77,7 @@ Les travaux pratiques sont réalisés avec **Google Colab**, les projets sont ve
 | TD3 | ✅ |
 | TD4 | ✅ |
 | TD5 | ✅ |
-| TD6 | 🚧 |
+| TD6 | ✅ |
 | TD7 — Mini-projet 1 | ⏳ |
 | TD8 | ⏳ |
 | Examen final | ⏳ |
@@ -169,7 +169,7 @@ Aucune installation de Python n'est nécessaire.
 
 Le cours est composé de :
 
-- **8 Travaux Dirigés** dont 1 mini-projet en binôme (TD7)
+- **8 Travaux Dirigés** dont 1 séance dédiée à une étude de cas + mini-projet en binôme (TD7)
 - **1 Examen final individuel**
 - **1 Feuille de présence au début de chaque séance**
 - **1 Quiz à la fin de chaque séance**
@@ -177,6 +177,8 @@ Le cours est composé de :
 Chaque séance dure **2 heures** (9 séances × 2h = 18h).
 
 > **Gestion du temps :** le quiz de fin de séance est obligatoire et se ferme à la fin du TD. N'hésitez pas à sauter des exercices pour vous laisser 10 minutes. Tout le notebook doit être terminé avant le prochain TD.
+
+> **Mini-projet 1 (TD7) :** démarré en binôme en séance, à terminer à la maison avant le TD8.
 
 ---
 
@@ -190,7 +192,7 @@ Chaque séance dure **2 heures** (9 séances × 2h = 18h).
 | TD4 | Les fonctions, modules et NumPy |
 | TD5 | Matplotlib, dictionnaires et Pandas |
 | TD6 | Logique, flux de contrôle, filtrage et boucles |
-| TD7 | **Mini-projet 1 – Analyse exploratoire en binôme** |
+| TD7 | **Étude de cas + Mini-projet 1 en binôme** |
 | TD8 | Pandas : agrégation et transformation des données |
 | — | **Examen final individuel** |
 

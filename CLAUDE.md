@@ -252,7 +252,7 @@ Ne jamais ajouter dans ce dépôt :
 ## Programme (année commune L3/M1 2026-2027)
 
 **8 TD de contenu + 1 examen final = 9 séances × 2h = 18h.**
-Le TD07 intègre le mini-projet 1 (en binôme, en séance, avec quiz). Il n'y a plus de mini-projet à la maison.
+Le TD07 intègre : (1) l'étude de cas "statistiques pirates" (nombres aléatoires, marche aléatoire, simulation, Matplotlib) puis (2) le mini-projet 1 en binôme démarré en séance et **terminé à la maison**. Le quiz de fin de séance reste obligatoire.
 
 | Séance | Contenu | Dossier |
 |--------|---------|---------|
@@ -262,7 +262,7 @@ Le TD07 intègre le mini-projet 1 (en binôme, en séance, avec quiz). Il n'y a 
 | TD4 | Les fonctions, modules et NumPy | à créer |
 | TD5 | Matplotlib, dictionnaires et Pandas | `td05_matplotlib_dictionnaires_et_pandas` |
 | TD6 | Logique, flux de contrôle, filtrage et boucles | `td06_logique_flux_de_controle_filtrage_et_boucles` |
-| TD7_MP1 | Mini-projet 1 — Analyse exploratoire en binôme | à créer |
+| TD7_MP1 | Étude de cas "statistiques pirates" + Mini-projet 1 en binôme | à créer |
 | TD8 | Pandas : agrégation et transformation | à créer |
 | Examen | Examen final individuel | — |
 
