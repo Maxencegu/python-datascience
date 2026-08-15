@@ -102,7 +102,7 @@ Les travaux pratiques sont réalisés avec **Google Colab**, les projets sont ve
 | TD03 | [Feuille de présence TD3](https://forms.gle/1BzdcFskHzuvG5cb7) |
 | TD04 | [Feuille de présence TD4](https://forms.gle/YDan7Wixd1eehg4E8) |
 | TD05 | [Feuille de présence TD5](https://forms.gle/K12J25Gtbn7tJw7d6) |
-| TD06 | 🚧 |
+| TD06 | [Feuille de présence TD6](https://forms.gle/6is3TkqYgviTDRQMA) |
 | TD07 — Étude de cas + Mini-projet 1 | ⏳ |
 | TD08 | ⏳ |
 
