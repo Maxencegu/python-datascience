@@ -178,6 +178,7 @@ Chaque séance dure **2 heures** (9 séances × 2h = 18h).
 
 > **Gestion du temps :** le quiz de fin de séance est obligatoire et se ferme à la fin du TD. N'hésitez pas à sauter des exercices pour vous laisser 10 minutes. Tout le notebook doit être terminé avant le prochain TD.
 
+
 > **Mini-projet 1 (TD7) :** démarré en binôme en séance, à terminer à la maison avant le TD8.
 
 ---
@@ -235,7 +236,7 @@ Chaque séance suit le même workflow.
    (reviewer obligatoire)
                     │
                     ▼
-        Google Forms (quiz)          ← à partir du TD3 (10 pts)
+        Google Forms (quiz)          ← à partir du TD2 (10 pts)
                     │
                     ▼
                Fin du TD

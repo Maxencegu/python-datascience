@@ -267,7 +267,7 @@ Le TD07 intègre : (1) l'étude de cas "statistiques pirates" (nombres aléatoir
 | Examen | Examen final individuel | — |
 
 **Workflow d'une séance (à ne pas modifier sans accord) :**
-GitHub → Correction TD précédent (à partir TD2) → Google Forms présence (10 pts) → Colab → Exercices (20 pts) → Sauvegarde GitHub sur branche `dev_tdXX` (à partir TD2) → GitHub Actions sur branche (à partir TD3) → Pull Request + review collègue → Merge main (à partir TD3) → Quiz fin de séance (10 pts, à partir TD3)
+GitHub → Correction TD précédent (à partir TD2) → Google Forms présence (10 pts) → Colab → Exercices (20 pts) → Sauvegarde GitHub sur branche `dev_tdXX` (à partir TD2) → GitHub Actions sur branche (à partir TD3) → Pull Request + review collègue → Merge main (à partir TD3) → Quiz fin de séance (10 pts, à partir TD3) incluant le renseignement de l'URL du dépôt étudiant (pour automatiser la correction)
 
 **Gestion du temps en séance :**
 Le quiz de fin de séance est obligatoire et se ferme à la fin du TD. Les étudiants doivent sauter des exercices si nécessaire pour avoir le temps de faire le quiz. Tout le notebook doit être terminé avant le prochain TD.
