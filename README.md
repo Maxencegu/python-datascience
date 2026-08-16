@@ -78,7 +78,7 @@ Les travaux pratiques sont réalisés avec **Google Colab**, les projets sont ve
 | TD4 | ✅ |
 | TD5 | ✅ |
 | TD6 | ✅ |
-| TD7 — Étude de cas + Mini-projet 1 | ⏳ |
+| TD7 — Étude de cas + Mini-projet 1 | ✅ |
 | TD8 | ⏳ |
 | Examen final | ⏳ |
 | Documentation | ⏳ |
@@ -103,8 +103,8 @@ Les travaux pratiques sont réalisés avec **Google Colab**, les projets sont ve
 | TD04 | [Feuille de présence TD4](https://forms.gle/YDan7Wixd1eehg4E8) |
 | TD05 | [Feuille de présence TD5](https://forms.gle/K12J25Gtbn7tJw7d6) |
 | TD06 | [Feuille de présence TD6](https://forms.gle/6is3TkqYgviTDRQMA) |
-| TD07 — Étude de cas + Mini-projet 1 | ⏳ |
-| TD08 | ⏳ |
+| TD07 | [Étude de cas + Mini-projet 1](https://forms.gle/8DqGDEdf2ggimTzx6) | ⏳ |
+| TD08 | [Feuille de présence TD8](https://forms.gle/X4S6x2ickHHd5Q9J9) ⏳ |
 
 ---
 
