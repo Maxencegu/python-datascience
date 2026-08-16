@@ -252,7 +252,9 @@ Ne jamais ajouter dans ce dépôt :
 ## Programme (année commune L3/M1 2026-2027)
 
 **8 TD de contenu + 1 examen final = 9 séances × 2h = 18h.**
-Le TD07 intègre : (1) l'étude de cas "statistiques pirates" (nombres aléatoires, marche aléatoire, simulation, Matplotlib) puis (2) le mini-projet 1 en binôme démarré en séance et **terminé à la maison**. Le quiz de fin de séance reste obligatoire.
+Le TD07 intègre : (1) l'étude de cas "statistiques pirates" (nombres aléatoires, marche aléatoire, simulation, Matplotlib) puis (2) le mini-projet 1 en binôme démarré en séance et **terminé à la maison**. **Pas de quiz de fin de séance pour le TD07** (séance trop chargée).
+
+**Barème TD07 :** 10 pts présence + 20 pts étude de cas (en séance) + 30 pts mini-projet 1 (rendu à la maison) = **60 pts**.
 
 | Séance | Contenu | Dossier |
 |--------|---------|---------|

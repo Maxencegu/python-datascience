@@ -172,7 +172,7 @@ Le cours est composé de :
 - **8 Travaux Dirigés** dont 1 séance dédiée à une étude de cas + mini-projet en binôme (TD7)
 - **1 Examen final individuel**
 - **1 Feuille de présence au début de chaque séance**
-- **1 Quiz à la fin de chaque séance**
+- **1 Quiz à la fin de chaque séance** (sauf TD7)
 
 Chaque séance dure **2 heures** (9 séances × 2h = 18h).
 
@@ -251,6 +251,8 @@ Chaque séance suit le même workflow.
 | Feuille de présence | 10 pts | TD1 |
 | Notebook (exercices Colab) | 20 pts | TD1 |
 | Quiz de fin de séance | 10 pts | TD2 |
+
+> **TD7 — barème spécifique :** 10 pts présence + 20 pts étude de cas (en séance) + 30 pts mini-projet 1 (rendu à la maison) = **60 pts**. Pas de quiz.
 
 ---
 
