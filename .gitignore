@@ -79,6 +79,9 @@ target/
 .ipynb_checkpoints
 
 
+# Examen final (retirer le jour de l'examen)
+assignments/examen_final/
+
 # Corrigés (retirer la ligne correspondante le jour de la publication)
 assignments/td01_introduction_a_git/td01_correction.ipynb
 assignments/td02_introduction_aux_concepts_de_github/td02_correction.ipynb
