@@ -10,7 +10,5 @@
   "30": "<Figure size 640x480 with 1 Axes>",
   "32": "<Figure size 640x480 with 1 Axes>",
   "35": "✅ Bonne réponse (4) : Correct! 80 % est en effet une très bonne valeur estimée.",
-  "36": "0.784",
-  "39": "Index(['show_id', 'type', 'title', 'director', 'cast', 'country', 'date_added',\n       'release_year', 'duration', 'description', 'genre'],\n      dtype='object')",
-  "40": "['Movie' 'TV Show']\n<Figure size 640x480 with 1 Axes>94\n7"
+  "36": "0.784"
 }

@@ -20,7 +20,7 @@ jobs:
           python-version: '3.12'
 
       - name: Installer les dépendances
-        run: pip install nbformat nbconvert ipykernel numpy pandas matplotlib seaborn
+        run: pip install nbformat nbconvert ipykernel numpy "pandas>=2.0,<3.0" matplotlib seaborn scipy
 
       - name: Détecter le TD depuis le nom de la branche
         run: |
