@@ -26,9 +26,6 @@
 > [!NOTE]
 >
 > **Dernière mise à jour :** Août 2026
->
-> 🚧 Cette plateforme est actuellement en cours de construction.
-> Les ressources pédagogiques seront publiées progressivement tout au long du semestre.
 
 ---
 
@@ -80,7 +77,7 @@ Les travaux pratiques sont réalisés avec **Google Colab**, les projets sont ve
 | TD6 | ✅ |
 | TD7 — Étude de cas + Mini-projet 1 | ✅ |
 | TD8 | ✅ |
-| Examen final | ⏳ |
+| Examen final | ✅ (publié le jour J) |
 | Documentation | ⏳ |
 | Jeux de données | ✅ |
 | FAQ | ⏳ |
@@ -103,8 +100,8 @@ Les travaux pratiques sont réalisés avec **Google Colab**, les projets sont ve
 | TD04 | [Feuille de présence TD4](https://forms.gle/YDan7Wixd1eehg4E8) |
 | TD05 | [Feuille de présence TD5](https://forms.gle/K12J25Gtbn7tJw7d6) |
 | TD06 | [Feuille de présence TD6](https://forms.gle/6is3TkqYgviTDRQMA) |
-| TD07 | [Étude de cas + Mini-projet 1](https://forms.gle/8DqGDEdf2ggimTzx6) | ⏳ |
-| TD08 | [Feuille de présence TD8](https://forms.gle/X4S6x2ickHHd5Q9J9) ⏳ |
+| TD07 | [Feuille de présence TD7](https://forms.gle/8DqGDEdf2ggimTzx6) |
+| TD08 | [Feuille de présence TD8](https://forms.gle/X4S6x2ickHHd5Q9J9) |
 
 ---
 
@@ -300,13 +297,15 @@ Chaque séance suit le même workflow.
 ```text
 python-datascience
 │
-├── assignments/
-├── datasets/
-├── docs/
-├── faq/
-├── projects/
-├── resources/
-└── assets/
+├── assignments/        ← notebooks de TD (énoncés + corrections gitignorées)
+├── datasets/           ← jeux de données partagés entre TD
+├── templates/          ← workflow GitHub Actions et scripts enseignant
+├── binder/             ← configuration Binder pour l'examen final
+├── projects/           ← consignes mini-projets
+├── resources/          ← fiches mémo
+├── docs/               ← guides techniques (à venir)
+├── faq/                ← questions fréquentes (à venir)
+└── assets/             ← visuels du dépôt
 ```
 
 ---

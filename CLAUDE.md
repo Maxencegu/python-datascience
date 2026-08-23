@@ -260,13 +260,13 @@ Le TD07 intègre : (1) l'étude de cas "statistiques pirates" (nombres aléatoir
 |--------|---------|---------|
 | TD1 | Introduction à Git | `td01_introduction_a_git` |
 | TD2 | Introduction à GitHub | `td02_introduction_aux_concepts_de_github` |
-| TD3 | Les bases de Python | à créer |
-| TD4 | Les fonctions, modules et NumPy | à créer |
+| TD3 | Les bases de Python | `td03_bases_de_python` |
+| TD4 | Les fonctions, modules et NumPy | `td04_fonctions_et_numpy` |
 | TD5 | Matplotlib, dictionnaires et Pandas | `td05_matplotlib_dictionnaires_et_pandas` |
-| TD6 | Logique, flux de contrôle, filtrage et boucles | `td06_logique_flux_de_controle_filtrage_et_boucles` |
-| TD7_MP1 | Étude de cas "statistiques pirates" + Mini-projet 1 en binôme | à créer |
-| TD8 | Pandas : agrégation et transformation | à créer |
-| Examen | Examen final individuel | — |
+| TD6 | Logique, flux de contrôle, filtrage et boucles | `td06_Logique_flux_de_controle_filtrage_et_boucles` |
+| TD7_MP1 | Étude de cas "statistiques pirates" + Mini-projet 1 en binôme | `td07_mp1_etude_de_cas_et_mini_projet` |
+| TD8 | Pandas : agrégation et transformation | `td08_pandas_agregation_et_transformation` |
+| Examen | Examen final individuel | `assignments/examen_final/` (gitignorée jusqu'au jour J) |
 
 **Workflow d'une séance (à ne pas modifier sans accord) :**
 GitHub → Correction TD précédent (à partir TD2) → Google Forms présence (10 pts) → Colab → Exercices (20 pts) → Sauvegarde GitHub sur branche `dev_tdXX` (à partir TD2) → GitHub Actions sur branche (à partir TD3) → Pull Request + review collègue → Merge main (à partir TD3) → Quiz fin de séance (10 pts, à partir TD3) incluant le renseignement de l'URL du dépôt étudiant (pour automatiser la correction)
@@ -307,9 +307,13 @@ templates/tests/
   tests_td.yml          ← workflow générique copié UNE FOIS par l'étudiant dans son repo
   run_tests.py          ← runner universel téléchargé par Actions au moment de l'exécution
   generate_expected.py  ← script ENSEIGNANT pour générer le JSON depuis la correction
-  td03_expected.json    ← outputs attendus pour TD03 (à créer par TD)
-  td04_expected.json
-  ...
+  td03_expected.json    ← outputs attendus TD03 ✅
+  td04_expected.json    ← outputs attendus TD04 ✅
+  td05_expected.json    ← outputs attendus TD05 ✅
+  td06_expected.json    ← outputs attendus TD06 ✅
+  td07_expected.json    ← outputs attendus TD07 partie 1 uniquement (MP exclu) ✅
+  td08_expected.json    ← outputs attendus TD08 ✅
+templates/dashboard_etudiants.py  ← script enseignant : tableau de bord des repos étudiants
 ```
 
 ### Principe de test
