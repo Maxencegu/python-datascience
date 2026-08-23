@@ -79,10 +79,10 @@ Les travaux pratiques sont réalisés avec **Google Colab**, les projets sont ve
 | TD5 | ✅ |
 | TD6 | ✅ |
 | TD7 — Étude de cas + Mini-projet 1 | ✅ |
-| TD8 | ⏳ |
+| TD8 | ✅ |
 | Examen final | ⏳ |
 | Documentation | ⏳ |
-| Jeux de données | ⏳ |
+| Jeux de données | ✅ |
 | FAQ | ⏳ |
 
 **Légende**
