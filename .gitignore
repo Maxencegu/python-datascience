@@ -79,6 +79,10 @@ target/
 .ipynb_checkpoints
 
 
+# Fichiers CSV téléchargés localement par les notebooks (ne pas committer)
+*.csv
+!datasets/*.csv
+
 # Examen final (retirer le jour de l'examen)
 assignments/examen_final/
 
