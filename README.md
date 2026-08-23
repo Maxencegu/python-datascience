@@ -254,6 +254,18 @@ Chaque séance suit le même workflow.
 
 > **TD7 — barème spécifique :** 10 pts présence + 20 pts étude de cas (en séance) + 30 pts mini-projet 1 (rendu à la maison) = **60 pts**. Pas de quiz.
 
+> **Examen final :** 200 points, durée 2 heures.
+
+| Exercice | Thème | Points |
+|----------|-------|--------|
+| Ex 1 | Fonctions Python | 20 pts |
+| Ex 2 | NumPy | 30 pts |
+| Ex 3 | Matplotlib | 30 pts |
+| Ex 4 | Pandas — sélection & filtrage | 40 pts |
+| Ex 5 | Nouvelles colonnes & statistiques | 30 pts |
+| Ex 6 | Statistiques groupées (.groupby) | 26 pts |
+| Ex 7 | Tableau croisé dynamique (.pivot_table) | 24 pts |
+
 ---
 
 # 🛠️ Environnement de travail
