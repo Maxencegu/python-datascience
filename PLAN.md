@@ -386,7 +386,7 @@ Définissez une fonction helper dans une cellule de configuration en haut du not
 # @title ⚙️ Configuration des ressources (ne pas modifier)
 from IPython.display import Image, display
 
-BASE_URL = "https://raw.githubusercontent.com/Maxencegu/python-datascience-l3/main/assignments/td01_fondements_de_github/images/"
+BASE_URL = "https://raw.githubusercontent.com/Maxencegu/python-datascience-m1/main/assignments/td01_fondements_de_github/images/"
 
 def afficher_infographie(nom_fichier, largeur=1300):
     display(Image(url=BASE_URL + nom_fichier, width=largeur))
