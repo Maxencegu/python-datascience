@@ -43,7 +43,7 @@ Chaque notebook commence par :
 
 Badge Open in Colab :
 ```markdown
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Maxencegu/python-datascience-m1/blob/main/assignments/tdXX_nom/tdXX_enonce.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Maxencegu/python-datascience-l3/blob/main/assignments/tdXX_nom/tdXX_enonce.ipynb)
 ```
 
 Fonction helper infographie (à adapter par TD) :
@@ -51,7 +51,7 @@ Fonction helper infographie (à adapter par TD) :
 # @title ⚙️ Configuration des ressources (ne pas modifier)
 from IPython.display import Image, display
 
-BASE_URL = "https://raw.githubusercontent.com/Maxencegu/python-datascience-m1/main/assignments/tdXX_nom/images/"
+BASE_URL = "https://raw.githubusercontent.com/Maxencegu/python-datascience-l3/main/assignments/tdXX_nom/images/"
 
 def afficher_infographie(nom_fichier, largeur=1300):
     display(Image(url=BASE_URL + nom_fichier, width=largeur))
@@ -70,7 +70,7 @@ La cellule Markdown d'introduction suit toujours ce plan :
 
 Exemple (TD05) :
 ```markdown
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Maxencegu/python-datascience-m1/blob/main/assignments/td05_matplotlib_dictionnaires_et_pandas/td05_enonce.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Maxencegu/python-datascience-l3/blob/main/assignments/td05_matplotlib_dictionnaires_et_pandas/td05_enonce.ipynb)
 
 # **Introduction**
 
