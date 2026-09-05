@@ -86,6 +86,16 @@ target/
 # Examen final (retirer le jour de l'examen)
 assignments/examen_final/
 
+# TD — masqués jusqu'à publication en séance (retirer la ligne le jour J)
+assignments/td01_introduction_a_git/
+assignments/td02_introduction_aux_concepts_de_github/
+assignments/td03_bases_de_python/
+assignments/td04_fonctions_et_numpy/
+assignments/td05_matplotlib_dictionnaires_et_pandas/
+assignments/td06_Logique_flux_de_controle_filtrage_et_boucles/
+assignments/td07_mp1_etude_de_cas_et_mini_projet/
+assignments/td08_pandas_agregation_et_transformation/
+
 # Corrigés (retirer la ligne correspondante le jour de la publication)
 assignments/td01_introduction_a_git/td01_correction.ipynb
 assignments/td02_introduction_aux_concepts_de_github/td02_correction.ipynb
@@ -97,6 +107,14 @@ assignments/td07_agregation/td07_correction.ipynb
 assignments/td08_filtrage/td08_correction.ipynb
 assignments/td09_fusion/td09_correction.ipynb
 assignments/td10_series_temporelles/td10_correction.ipynb
+
+# Cours magistraux — publier progressivement (retirer la ligne le jour J)
+cours/cm03_flux_de_controle_et_structures_de_donnees/
+cours/cm04_fonctions/
+cours/cm05_modules_packages_apis_et_donnees/
+cours/cm06_python_pratique_et_poo/
+cours/cm07_git_github_et_outils/
+cours/cm08_projet_complet_et_recap/
 
 # IPython
 profile_default/
